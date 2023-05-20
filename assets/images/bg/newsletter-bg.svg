@@ -1,0 +1,44 @@
+<svg width="1920" height="460" viewBox="0 0 1920 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1_178" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="460">
+<rect width="1920" height="460" fill="#F0F1F6"/>
+</mask>
+<g mask="url(#mask0_1_178)">
+<g filter="url(#filter0_f_1_178)">
+<circle cx="284" cy="69" r="196" fill="#F2DC9E"/>
+</g>
+<g filter="url(#filter1_f_1_178)">
+<circle cx="1627" cy="344" r="196" fill="#9CF3D6"/>
+</g>
+<g opacity="0.15">
+<path d="M297 498.81V423.37C297 393.34 321.34 369 351.37 369C381.4 369 405.74 393.34 405.74 423.37V498.81" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M310.65 498.81V423.87C310.65 401.38 328.88 383.14 351.38 383.14C373.88 383.14 392.11 401.37 392.11 423.87V498.81" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M378.35 498.81V426.95C378.35 412.05 366.27 399.98 351.38 399.98C336.48 399.98 324.41 412.06 324.41 426.95V498.81" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M124.14 137.48L113.2 126.71L102.26 137.48L91.31 126.71L80.37 137.48L69.43 126.71L58.49 137.48L47.55 126.71L36.61 137.48L25.66 126.71L14.72 137.48L3.78 126.71L-7.17 137.48L-18.11 126.71L-29.05 137.48L-40 126.71" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M124.14 115.77L113.2 105L102.26 115.77L91.31 105L80.37 115.77L69.43 105L58.49 115.77L47.55 105L36.61 115.77L25.66 105L14.72 115.77L3.78 105L-7.17 115.77L-18.11 105L-29.05 115.77L-40 105" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1561 394V480" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1518 437H1604" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1591.4 406.591L1530.59 467.409" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1530.59 406.591L1591.4 467.409" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1695.03 0V81.6128" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1719.88 0V81.6128" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1744.73 0V81.6128" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1769.58 0V81.6128" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1794.43 0V81.6128" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1683 64.0151H1806.57" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1683 39.1643H1806.57" stroke="#202020" stroke-miterlimit="10"/>
+<path d="M1683 14.313H1806.57" stroke="#202020" stroke-miterlimit="10"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_1_178" x="-297" y="-512" width="1162" height="1162" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="192.5" result="effect1_foregroundBlur_1_178"/>
+</filter>
+<filter id="filter1_f_1_178" x="1046" y="-237" width="1162" height="1162" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="192.5" result="effect1_foregroundBlur_1_178"/>
+</filter>
+</defs>
+</svg>
