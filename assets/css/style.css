@@ -4,18 +4,15 @@ Template Name: zuriel -theme-Template
 /*================================================
 1. Mixins Css
 2. Global CSS
-3. Preloader
-4. Magic Cursor
-5. Direction Hover effect
-6. Section-title
-7. Slider arrows 
-8.  Pagination
-9. Buttons
-10.  Sidebar
-11. Header section
-12. Bread-crumb
-13. Swiper slider css
-14. Banner-section
+3. Section-title
+4. global single content
+5. slider arrow
+6. Buttons
+7. odometer
+8. Header start
+9. banner-area
+10. trending-theme-section
+11. category-section
 15. portfolio-section
 16. Skill-section
 17. Team-section
@@ -474,7 +471,7 @@ img {
 }
 
 /*=======================================
- 06. Section-title
+ 03. Section-title
 =======================================*/
 @media (max-width: 991px) {
   .section-title {
@@ -490,7 +487,7 @@ img {
 }
 
 /*=======================================
- 03. global-sigle-content
+ 04. global-sigle-content
 =======================================*/
 .global-single {
   background: #FFFFFF;
@@ -631,7 +628,7 @@ img {
 }
 
 /*=======================================
- 07. Slider arrows 
+ 05. Slider arrows 
 =======================================*/
 .arrow-style-two .wocom-prev,
 .arrow-style-two .wocom-next {
@@ -646,7 +643,7 @@ img {
 }
 
 /*=======================================
- 09. Buttons 
+ 06. Buttons 
 =======================================*/
 .eg-btn {
   text-align: center;
@@ -769,12 +766,8 @@ img {
   padding: 6px 18px;
 }
 
-.btn--capsule {
-  border-radius: 50px;
-}
-
 /*=======================================
- 9. odometer
+ 7. odometer
 =======================================*/
 .counter-wrapper .coundown {
   display: flex;
@@ -817,10 +810,7 @@ img {
 }
 
 /*=======================================
- 10. Sidebar
-=======================================*/
-/*=======================================
- 11 .Header Start
+ 8.Header Start
 =======================================*/
 header.style-1 {
   width: 100%;
@@ -1211,7 +1201,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
 }
 
 /*=======================================
- 2. banner-area
+9. banner-area
 =======================================*/
 .banner-area {
   background-image: url(../images/bg/banner-bg.png);
@@ -1220,7 +1210,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
   background-size: cover;
 }
 .banner-area .banner-content {
-  padding-left: 220px;
+  padding-left: 180px;
 }
 .banner-area .banner-content .banner-title h1 {
   font-family: "Lexend";
@@ -1356,10 +1346,40 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
 }
 
 /*=======================================
- 5. trending-theme-section
+ 10. trending-theme-section
 =======================================*/
 .trending-theme-section {
+  background-color: #fff;
   padding: 70px 60px 70px 30px;
+}
+.trending-theme-section .nav-wrapper .tab-next {
+  position: absolute;
+  top: 8px;
+  right: -20px;
+}
+.trending-theme-section .nav-wrapper .tab-next i {
+  background-color: #F0F1F6 !important;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #09101A;
+}
+.trending-theme-section .nav-wrapper .tab-prev {
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+.trending-theme-section .nav-wrapper .tab-prev i {
+  background: #F0F1F6;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .trending-theme-section .nav {
   gap: 20px;
@@ -1487,6 +1507,8 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
   background: #FFFFFF;
   border-radius: 2px;
   padding: 20px;
+  box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
+  border-radius: 5px;
 }
 @media (max-width: 1399px) {
   .trending-single {
@@ -1508,12 +1530,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
 }
 .trending-single .trending-image img {
   transition: all 0.55s ease-in-out;
-  border-radius: 5px 5px 0px 0px;
-}
-@media (max-width: 1399px) {
-  .trending-single .trending-image img {
-    width: 100%;
-  }
+  border-radius: 5px;
 }
 .trending-single .trending-image span.favourite {
   position: absolute;
@@ -1546,7 +1563,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
 }
 
 .trending-content {
-  padding: 25px 20px;
+  padding-left: 25px;
 }
 .trending-content h6 {
   margin-bottom: 8px;
@@ -1620,7 +1637,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
 }
 
 /*=======================================
- 9. category-section
+ 11. category-section
 =======================================*/
 .category-section .category-single {
   background: #F5F6FA;
@@ -1630,6 +1647,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
   padding: 20px 20px 0;
   transition: 0.6s ease;
   position: relative;
+  margin-top: 90px;
 }
 .category-section .category-single .category-icon {
   position: absolute;
@@ -1707,7 +1725,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--md {
 }
 
 /*=======================================
- 7. newest-theme section
+ 12. newest-theme section
 =======================================*/
 /*=======================================
  6. theme banner section
@@ -2067,33 +2085,4 @@ footer .footer-bottom .f-bottom-list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.nav-wrapper .tab-next {
-  position: absolute;
-  top: 8px;
-  right: -20px;
-}
-.nav-wrapper .tab-next i {
-  background: #F0F1F6;
-  border-radius: 100px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-wrapper .tab-prev {
-  position: absolute;
-  top: 8px;
-  left: -20px;
-}
-.nav-wrapper .tab-prev i {
-  background: #F0F1F6;
-  border-radius: 100px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=style.css.map */
