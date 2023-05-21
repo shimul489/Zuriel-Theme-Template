@@ -131,16 +131,16 @@ var swiper = new Swiper(".wocom-slider", {
       slidesPerView: 1,
     },
     540: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     768: {
       slidesPerView: 2,
     },
     992: {
-      slidesPerView: 3
+      slidesPerView: 3,
     },
     1200: {
-      slidesPerView: 4
+      slidesPerView: 4,
     },
     1400: {
       slidesPerView: 4

@@ -87,13 +87,11 @@
                 </ul>
                 <!-- mobile-search-area -->
             </div>
-            <div class="nav-right d-xxl-flex d-none">
-                <div class="cart-login d-flex jsutify-content-between align-items-center">
-                    <div class="cart-icon">
-                        <i class="bi bi-cart2"></i>
-                    </div>
+            <div class="nav-right d-flex">
+                <div class="cart-login d-flex d-lg-flex d-none jsutify-content-between align-items-center">
+                    <a href="#" class="cart-icon"> <i class="bi bi-cart2"></i></a>
                     <div class="login-btn">
-                        <a href="#" class="eg-btn btn--primary-outline btn--md">login</a>
+                        <a href="#" class="btn--primary">login</a>
                     </div>
                 </div>
                 <div class="mobile-menu-btn d-lg-none d-block">
@@ -104,10 +102,10 @@
     </header>
     <!-- ========== header end============= -->
     <!-- banner are start here -->
-    <div class="banner-area pt-120 pb-120">
+    <!-- <div class="banner-area pt-120 pb-120">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
+                <div class="col-lg-12 col-xl-7">
                     <div class="banner-content">
                         <div class="banner-title">
                             <h1>Professional <Span> WordPress</Span> Themes Collection.</h1>
@@ -146,22 +144,20 @@
                                 </div>
                             </div>
                         </div>
-
-                        <form>
-                            <div class="multi-main-search">
-                                <div class="form-inner">
-                                    <input type="text" name="" id="" placeholder="Search Your Product....">
-                                    <i class="bi bi-x-circle-fill"></i>
+                        <div class="widget_search mb-30">
+                            <form>
+                                <div class="search__inside-wrapper ">
+                                    <input type="search" id="wp-block-search__input-1" class="wp-block-search__input"
+                                        name="s" value="" placeholder="Search Your Product...." required="">
+                                    <button type="submit" class="wp-block-search__button">
+                                        Search <img src="assets/images/icon/search-icon.svg" alt="">
+                                    </button>
                                 </div>
-                                <div class="form-inner">
-                                    <button type="submit">Search <img src="assets/images/icon/search-icon.svg"
-                                            alt=""></button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12 col-xl-5">
                     <div class="row justify-content-between align-items-center g-4">
                         <div class="banner-top d-flex justify-content-center align-items-center">
                             <div class="banner-img">
@@ -184,7 +180,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- banner are end here -->
 
     <!-- ========== category-section start ============= -->
@@ -295,13 +291,13 @@
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-lg-12">
-                    <div class="section-title d-flex justify-content-between align-items-center pt-80 pb-65">
+                    <div class="section-title d-flex justify-content-between align-items-center pt-80">
                         <h2>Newest Theme & Template</h2>
                         <select name="Plastering" id="Plastering">
-                            <option value="volvo">All Theme<i class='bx bx-chevron-right'></i></option>
-                            <option value="saab">WordPress</option>
-                            <option value="mercedes">Site Templates</option>
-                            <option value="audi">E-Commerce</option>
+                            <option value="All Theme">All Theme<i class='bx bx-chevron-right'></i></option>
+                            <option value="WordPress">WordPress</option>
+                            <option value="Site Templates">Site Templates</option>
+                            <option value="E-Commerce">E-Commerce</option>
                         </select>
                     </div>
                 </div>
@@ -464,7 +460,7 @@
     <div class="trending-theme-section pt-120 pb-120">
         <div class="container-fluid">
             <div class="nav-wrapper">
-                <div class="row">
+                <div class="row g-5">
                     <div class="col-lg-5">
                         <div class="nav-title">
                             <h3>Trending Theme & Template</h3>
@@ -687,246 +683,236 @@
                         <div class="tab-pane fade show active" id="all-category" role="tabpanel"
                             aria-labelledby="all-category-tab" tabindex="0">
                             <div class="trending-theme-section pt-40 pb-40">
-                                        <div class="row gy-4">
-                                            <div class="col-lg-6">
-                                                <div
-                                                    class="trending-single d-flex justify-content-center align-items-center">
-                                                    <div class="trending-image">
-                                                        <span class="favourite">
-                                                            <img src="assets/images/icon/heart-icon.svg" alt="">
-                                                        </span>
-                                                        <img src="assets/images/blog/trending-avalle Next J.png"
-                                                            class="img-fluid" alt="image">
+                                <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                        <div class="trending-single d-flex justify-content-center align-items-center">
+                                            <div class="trending-image">
+                                                <span class="favourite">
+                                                    <img src="assets/images/icon/heart-icon.svg" alt="">
+                                                </span>
+                                                <img src="assets/images/blog/trending-avalle Next J.png"
+                                                    class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="trending-content">
+                                                <h6><a href="tour-package-details.html">Avalle - NFT Portfolio
+                                                        Next JS
+                                                        Template.</a></h6>
+                                                <div class="review-area ">
+                                                    <div class="star-wrap">
+                                                        <ul class="star-list">
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li>(0)</li>
+                                                        </ul>
+                                                        <span><strong>07</strong> sale</span>
                                                     </div>
-                                                    <div class="trending-content">
-                                                        <h6><a href="tour-package-details.html">Avalle - NFT Portfolio
-                                                                Next JS
-                                                                Template.</a></h6>
-                                                        <div class="review-area ">
-                                                            <div class="star-wrap">
-                                                                <ul class="star-list">
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li>(0)</li>
-                                                                </ul>
-                                                                <span><strong>07</strong> sale</span>
-                                                            </div>
-                                                            <div class="review-icon review-html">
-                                                                <img src="assets/images/icon/trending-next-js .png"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span>$21</span>
-                                                            <a href="tour-package-details.html"
-                                                                class="eg-btn btn--primary-outline btn--md">Live
-                                                                Preview</a>
-                                                        </div>
+                                                    <div class="review-icon review-html">
+                                                        <img src="assets/images/icon/trending-next-js .png" alt="">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div
-                                                    class="trending-single d-flex justify-content-center align-items-center">
-                                                    <div class="trending-image">
-                                                        <span class="favourite">
-                                                            <img src="assets/images/icon/heart-icon.svg" alt="">
-                                                        </span>
-                                                        <img src="assets/images/blog/trending-bidout WordPress 3.png"
-                                                            class="img-fluid" alt="image">
-                                                    </div>
-                                                    <div class="trending-content">
-                                                        <h6><a href="tour-package-details.html">Bidout - Multivendor Bid
-                                                                and
-                                                                Auction WordPress Theme</a></h6>
-                                                        <div class="review-area ">
-                                                            <div class="star-wrap">
-                                                                <ul class="star-list">
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star"></i></li>
-                                                                    <li><i class="bi bi-star"></i></li>
-                                                                    <li>(5)</li>
-                                                                </ul>
-                                                                <span><strong>37</strong> sale</span>
-                                                            </div>
-                                                            <div class="review-icon">
-                                                                <img src="assets/images/icon/wordpress-sale-icon.png"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span>$49</span>
-                                                            <a href="tour-package-details.html"
-                                                                class="eg-btn btn--primary-outline btn--md">Live
-                                                                Preview</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div
-                                                    class="trending-single d-flex justify-content-center align-items-center">
-                                                    <div class="trending-image">
-                                                        <span class="favourite">
-                                                            <img src="assets/images/icon/heart-icon.svg" alt="">
-                                                        </span>
-                                                        <img src="assets/images/blog/trending-tour-x-pro.png"
-                                                            class="img-fluid" alt="image">
-                                                    </div>
-                                                    <div class="trending-content">
-                                                        <h6><a href="tour-package-details.html">TourXpro Travels Tourism
-                                                                Agency
-                                                                React Template</a></h6>
-                                                        <div class="review-area ">
-                                                            <div class="star-wrap">
-                                                                <ul class="star-list">
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li>(1)</li>
-                                                                </ul>
-                                                                <span><strong>29</strong> sale</span>
-                                                            </div>
-                                                            <div class="review-icon review-react">
-                                                                <img src="assets/images/icon/react-2 1.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span>$21</span>
-                                                            <a href="tour-package-details.html"
-                                                                class="eg-btn btn--primary-outline btn--md">Live
-                                                                Preview</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div
-                                                    class="trending-single d-flex justify-content-center align-items-center">
-                                                    <div class="trending-image">
-                                                        <span class="favourite">
-                                                            <img src="assets/images/icon/heart-icon.svg" alt="">
-                                                        </span>
-                                                        <img src="assets/images/blog/trending-corelaw WordPress 1.png"
-                                                            class="img-fluid" alt="image">
-                                                    </div>
-                                                    <div class="trending-content">
-                                                        <h6><a href="tour-package-details.html">Corelaw - Lawyer & Law
-                                                                Firm
-                                                                WordPress Theme.</a></h6>
-                                                        <div class="review-area ">
-                                                            <div class="star-wrap">
-                                                                <ul class="star-list">
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li>(1)</li>
-                                                                </ul>
-                                                                <span><strong>20</strong> sale</span>
-                                                            </div>
-                                                            <div class="review-icon">
-                                                                <img src="assets/images/icon/wordpress-sale-icon.png"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span>$39</span>
-                                                            <a href="tour-package-details.html"
-                                                                class="eg-btn btn--primary-outline btn--md">Live
-                                                                Preview</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div
-                                                    class="trending-single d-flex justify-content-center align-items-center">
-                                                    <div class="trending-image">
-                                                        <span class="favourite">
-                                                            <img src="assets/images/icon/heart-icon.svg" alt="">
-                                                        </span>
-                                                        <img src="assets/images/blog/trending-astrip.png"
-                                                            class="img-fluid" alt="image">
-                                                    </div>
-                                                    <div class="trending-content">
-                                                        <h6><a href="tour-package-details.html">Astrip – Tour Booking an
-                                                                Travel
-                                                                Travel Agency HTML Template</a></h6>
-                                                        <div class="review-area ">
-                                                            <div class="star-wrap">
-                                                                <ul class="star-list">
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li>(0)</li>
-                                                                </ul>
-                                                                <span><strong>35</strong> sale</span>
-                                                            </div>
-                                                            <div class="review-icon review-html">
-                                                                <img src="assets/images/icon/html-sale-icon.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span>$19</span>
-                                                            <a href="tour-package-details.html"
-                                                                class="eg-btn btn--primary-outline btn--md">Live
-                                                                Preview</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div
-                                                    class="trending-single d-flex justify-content-center align-items-center">
-                                                    <div class="trending-image">
-                                                        <span class="favourite">
-                                                            <img src="assets/images/icon/heart-icon.svg" alt="">
-                                                        </span>
-                                                        <img src="assets/images/blog/trending-finibus WordPress 2.png"
-                                                            class="img-fluid" alt="image">
-                                                    </div>
-                                                    <div class="trending-content">
-                                                        <h6><a href="tour-package-details.html">Finibus - Software and
-                                                                Digital
-                                                                Agency WordPress Theme</a></h6>
-                                                        <div class="review-area ">
-                                                            <div class="star-wrap">
-                                                                <ul class="star-list">
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li>(0)</li>
-                                                                </ul>
-                                                                <span><strong>35</strong> sale</span>
-                                                            </div>
-                                                            <div class="review-icon">
-                                                                <img src="assets/images/icon/wordpress-sale-icon.png"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span>$39</span>
-                                                            <a href="tour-package-details.html"
-                                                                class="eg-btn btn--primary-outline btn--md">Live
-                                                                Preview</a>
-                                                        </div>
-                                                    </div>
+                                                <div class="price">
+                                                    <span>$21</span>
+                                                    <a href="tour-package-details.html"
+                                                        class="eg-btn btn--primary-outline btn--md">Live
+                                                        Preview</a>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="trending-single d-flex justify-content-center align-items-center">
+                                            <div class="trending-image">
+                                                <span class="favourite">
+                                                    <img src="assets/images/icon/heart-icon.svg" alt="">
+                                                </span>
+                                                <img src="assets/images/blog/trending-bidout WordPress 3.png"
+                                                    class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="trending-content">
+                                                <h6><a href="tour-package-details.html">Bidout - Multivendor Bid
+                                                        and
+                                                        Auction WordPress Theme</a></h6>
+                                                <div class="review-area ">
+                                                    <div class="star-wrap">
+                                                        <ul class="star-list">
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star"></i></li>
+                                                            <li><i class="bi bi-star"></i></li>
+                                                            <li>(5)</li>
+                                                        </ul>
+                                                        <span><strong>37</strong> sale</span>
+                                                    </div>
+                                                    <div class="review-icon">
+                                                        <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <span>$49</span>
+                                                    <a href="tour-package-details.html"
+                                                        class="eg-btn btn--primary-outline btn--md">Live
+                                                        Preview</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="trending-single d-flex justify-content-center align-items-center">
+                                            <div class="trending-image">
+                                                <span class="favourite">
+                                                    <img src="assets/images/icon/heart-icon.svg" alt="">
+                                                </span>
+                                                <img src="assets/images/blog/trending-tour-x-pro.png" class="img-fluid"
+                                                    alt="image">
+                                            </div>
+                                            <div class="trending-content">
+                                                <h6><a href="tour-package-details.html">TourXpro Travels Tourism
+                                                        Agency
+                                                        React Template</a></h6>
+                                                <div class="review-area ">
+                                                    <div class="star-wrap">
+                                                        <ul class="star-list">
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li>(1)</li>
+                                                        </ul>
+                                                        <span><strong>29</strong> sale</span>
+                                                    </div>
+                                                    <div class="review-icon review-react">
+                                                        <img src="assets/images/icon/react-2 1.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <span>$21</span>
+                                                    <a href="tour-package-details.html"
+                                                        class="eg-btn btn--primary-outline btn--md">Live
+                                                        Preview</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="trending-single d-flex justify-content-center align-items-center">
+                                            <div class="trending-image">
+                                                <span class="favourite">
+                                                    <img src="assets/images/icon/heart-icon.svg" alt="">
+                                                </span>
+                                                <img src="assets/images/blog/trending-corelaw WordPress 1.png"
+                                                    class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="trending-content">
+                                                <h6><a href="tour-package-details.html">Corelaw - Lawyer & Law
+                                                        Firm
+                                                        WordPress Theme.</a></h6>
+                                                <div class="review-area ">
+                                                    <div class="star-wrap">
+                                                        <ul class="star-list">
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li>(1)</li>
+                                                        </ul>
+                                                        <span><strong>20</strong> sale</span>
+                                                    </div>
+                                                    <div class="review-icon">
+                                                        <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <span>$39</span>
+                                                    <a href="tour-package-details.html"
+                                                        class="eg-btn btn--primary-outline btn--md">Live
+                                                        Preview</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="trending-single d-flex justify-content-center align-items-center">
+                                            <div class="trending-image">
+                                                <span class="favourite">
+                                                    <img src="assets/images/icon/heart-icon.svg" alt="">
+                                                </span>
+                                                <img src="assets/images/blog/trending-astrip.png" class="img-fluid"
+                                                    alt="image">
+                                            </div>
+                                            <div class="trending-content">
+                                                <h6><a href="tour-package-details.html">Astrip – Tour Booking an
+                                                        Travel
+                                                        Travel Agency HTML Template</a></h6>
+                                                <div class="review-area ">
+                                                    <div class="star-wrap">
+                                                        <ul class="star-list">
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li>(0)</li>
+                                                        </ul>
+                                                        <span><strong>35</strong> sale</span>
+                                                    </div>
+                                                    <div class="review-icon review-html">
+                                                        <img src="assets/images/icon/html-sale-icon.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <span>$19</span>
+                                                    <a href="tour-package-details.html"
+                                                        class="eg-btn btn--primary-outline btn--md">Live
+                                                        Preview</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="trending-single d-flex justify-content-center align-items-center">
+                                            <div class="trending-image">
+                                                <span class="favourite">
+                                                    <img src="assets/images/icon/heart-icon.svg" alt="">
+                                                </span>
+                                                <img src="assets/images/blog/trending-finibus WordPress 2.png"
+                                                    class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="trending-content">
+                                                <h6><a href="tour-package-details.html">Finibus - Software and
+                                                        Digital
+                                                        Agency WordPress Theme</a></h6>
+                                                <div class="review-area ">
+                                                    <div class="star-wrap">
+                                                        <ul class="star-list">
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li><i class="bi bi-star-fill"></i></li>
+                                                            <li>(0)</li>
+                                                        </ul>
+                                                        <span><strong>35</strong> sale</span>
+                                                    </div>
+                                                    <div class="review-icon">
+                                                        <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <span>$39</span>
+                                                    <a href="tour-package-details.html"
+                                                        class="eg-btn btn--primary-outline btn--md">Live
+                                                        Preview</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="wordPress" role="tabpanel" aria-labelledby="wordPress-tab"
@@ -1934,7 +1920,7 @@
     <!-- theme banner start here  -->
     <div class="theme-banner-section pt-120 pb-120">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
+            <div class="row justify-content-between align-items-center gy-5">
                 <div class="col-lg-7">
                     <div class="theme-inner-wrap">
                         <div class="row gy-5 justify-content-between align-items-center">
@@ -2000,7 +1986,7 @@
         <div class="container">
             <div class="row justify-content-between align-items-center g-5">
                 <div class="col-lg-5 ">
-                    <div class="offer-image">
+                    <div class="offer-image text-center">
                         <img class="img-fluid" src="assets/images/blog/offer-img.png" alt="">
                     </div>
                 </div>
@@ -2016,45 +2002,50 @@
     </div>
     <!-- offer banner section end -->
 
-    <!-- top selling products  -->
-    <div class="container pt-120">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="global-single mb-35">
-                    <div class="global-image">
-                        <span class="favourite">
-                            <img src="assets/images/icon/heart-icon.svg" alt="">
-                        </span>
-                        <img src="assets/images/blog/top-selling-p1.png" class="img-fluid" alt="image">
-                    </div>
-                    <div class="global-content">
-                        <h6><a href="tour-package-details.html">Turio - Tour Booking and Travel WordPress Theme Tourism
-                                Agency.</a></h6>
-                        <div class="review-area ">
-                            <div class="star-wrap">
-                                <ul class="star-list">
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li>(4)</li>
-                                </ul>
-                                <span>93 sale</span>
-                            </div>
-                            <div class="review-icon">
-                                <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span>$39</span>
-                            <a href="tour-package-details.html" class="eg-btn btn--primary-outline btn--md">Live
-                                Preview</a>
-                        </div>
-                    </div>
+    <!-- top selling products start -->
+    <div class="top-selling-product pt-120">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="section-title d-flex justify-content-between align-items-center">
+                    <h2>Top Selling Product</h2>
+                    <a href="#" class="btn--primary">View all product</a>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-12">
+                <div class="col-lg-6 col-md-12">
+                    <div class="left-side-product d-flex justify-content-between flex-column ">
+                        <div class="global-single mb-35">
+                            <div class="global-image">
+                                <span class="favourite">
+                                    <img src="assets/images/icon/heart-icon.svg" alt="">
+                                </span>
+                                <img src="assets/images/blog/top-selling-p1.png" class="img-fluid" alt="image">
+                            </div>
+                            <div class="global-content">
+                                <h6><a href="tour-package-details.html">Turio - Tour Booking and Travel WordPress Theme
+                                        Tourism
+                                        Agency.</a></h6>
+                                <div class="review-area ">
+                                    <div class="star-wrap">
+                                        <ul class="star-list">
+                                            <li><i class="bi bi-star-fill"></i></li>
+                                            <li><i class="bi bi-star-fill"></i></li>
+                                            <li><i class="bi bi-star-fill"></i></li>
+                                            <li><i class="bi bi-star-fill"></i></li>
+                                            <li><i class="bi bi-star-fill"></i></li>
+                                            <li>(4)</li>
+                                        </ul>
+                                        <span>93 sale</span>
+                                    </div>
+                                    <div class="review-icon">
+                                        <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>$39</span>
+                                    <a href="tour-package-details.html" class="eg-btn btn--primary-outline btn--md">Live
+                                        Preview</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="global-single d-flex justify-content-center align-items-center">
                             <div class="global-image">
                                 <span class="favourite">
@@ -2083,150 +2074,158 @@
                                 </div>
                                 <div class="price">
                                     <span>$19</span>
-                                    <a href="tour-package-details.html" class="eg-btn btn--primary-outline btn--md">Live
+                                    <a href="tour-package-details.html"
+                                        class="eg-btn btn--primary-outline btn--md">Live
                                         Preview</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="global-single">
-                            <div class="global-image">
-                                <span class="favourite">
-                                    <img src="assets/images/icon/heart-icon.svg" alt="">
-                                </span>
-                                <img src="assets/images/blog/top-selling-p3.png" class="img-fluid" alt="image">
-                            </div>
-                            <div class="global-content">
-                                <h6><a href="tour-package-details.html">Avalle - NFT Portfolio WordPress Theme.</a></h6>
-                                <div class="review-area ">
-                                    <div class="star-wrap">
-                                        <ul class="star-list">
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li>(0)</li>
-                                        </ul>
-                                        <span>06 sale</span>
-                                    </div>
-                                    <div class="review-icon">
-                                        <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
-                                    </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="global-single">
+                                <div class="global-image">
+                                    <span class="favourite">
+                                        <img src="assets/images/icon/heart-icon.svg" alt="">
+                                    </span>
+                                    <img src="assets/images/blog/top-selling-p3.png" class="img-fluid" alt="image">
                                 </div>
-                                <div class="price">
-                                    <span>$39</span>
-                                    <a href="tour-package-details.html" class="eg-btn btn--primary-outline btn--md">Live
-                                        Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="global-single">
-                            <div class="global-image">
-                                <span class="favourite">
-                                    <img src="assets/images/icon/heart-icon.svg" alt="">
-                                </span>
-                                <img src="assets/images/blog/top-selling-p4.png" class="img-fluid" alt="image">
-                            </div>
-                            <div class="global-content">
-                                <h6><a href="tour-package-details.html">Restho - Elegant Restaurant React Next.js
-                                        Template.</a></h6>
-                                <div class="review-area ">
-                                    <div class="star-wrap">
-                                        <ul class="star-list">
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li>(0)</li>
-                                        </ul>
-                                        <span>19 sale</span>
+                                <div class="global-content">
+                                    <h6><a href="tour-package-details.html">Avalle - NFT Portfolio WordPress Theme.</a>
+                                    </h6>
+                                    <div class="review-area ">
+                                        <div class="star-wrap">
+                                            <ul class="star-list">
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li>(0)</li>
+                                            </ul>
+                                            <span>06 sale</span>
+                                        </div>
+                                        <div class="review-icon">
+                                            <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
+                                        </div>
                                     </div>
-                                    <div class="review-icon">
-                                        <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
+                                    <div class="price">
+                                        <span>$39</span>
+                                        <a href="tour-package-details.html"
+                                            class="eg-btn btn--primary-outline btn--md">Live
+                                            Preview</a>
                                     </div>
-                                </div>
-                                <div class="price">
-                                    <span>$19</span>
-                                    <a href="tour-package-details.html" class="eg-btn btn--primary-outline btn--md">Live
-                                        Preview</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="global-single">
-                            <div class="global-image">
-                                <span class="favourite">
-                                    <img src="assets/images/icon/heart-icon.svg" alt="">
-                                </span>
-                                <img src="assets/images/blog/top-selling-p5.png" class="img-fluid" alt="image">
-                            </div>
-                            <div class="global-content">
-                                <h6><a href="tour-package-details.html">Reves - Software and Digital Agency WordPress
-                                        Theme.</a></h6>
-                                <div class="review-area ">
-                                    <div class="star-wrap">
-                                        <ul class="star-list">
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li>(0)</li>
-                                        </ul>
-                                        <span>30 sale</span>
-                                    </div>
-                                    <div class="review-icon">
-                                        <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
-                                    </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="global-single">
+                                <div class="global-image">
+                                    <span class="favourite">
+                                        <img src="assets/images/icon/heart-icon.svg" alt="">
+                                    </span>
+                                    <img src="assets/images/blog/top-selling-p4.png" class="img-fluid" alt="image">
                                 </div>
-                                <div class="price">
-                                    <span>$39</span>
-                                    <a href="tour-package-details.html" class="eg-btn btn--primary-outline btn--md">Live
-                                        Preview</a>
+                                <div class="global-content">
+                                    <h6><a href="tour-package-details.html">Restho - Elegant Restaurant React Next.js
+                                            Template.</a></h6>
+                                    <div class="review-area ">
+                                        <div class="star-wrap">
+                                            <ul class="star-list">
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li>(0)</li>
+                                            </ul>
+                                            <span>19 sale</span>
+                                        </div>
+                                        <div class="review-icon">
+                                            <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span>$19</span>
+                                        <a href="tour-package-details.html"
+                                            class="eg-btn btn--primary-outline btn--md">Live
+                                            Preview</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="global-single">
-                            <div class="global-image">
-                                <span class="favourite">
-                                    <img src="assets/images/icon/heart-icon.svg" alt="">
-                                </span>
-                                <img src="assets/images/blog/top-selling-p6.png" class="img-fluid" alt="image">
-                            </div>
-                            <div class="global-content">
-                                <h6><a href="tour-package-details.html">Picszen - Photography HTML Template.</a></h6>
-                                <div class="review-area ">
-                                    <div class="star-wrap">
-                                        <ul class="star-list">
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li><i class="bi bi-star-fill"></i></li>
-                                            <li>(0)</li>
-                                        </ul>
-                                        <span>07 sale</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="global-single">
+                                <div class="global-image">
+                                    <span class="favourite">
+                                        <img src="assets/images/icon/heart-icon.svg" alt="">
+                                    </span>
+                                    <img src="assets/images/blog/top-selling-p5.png" class="img-fluid" alt="image">
+                                </div>
+                                <div class="global-content">
+                                    <h6><a href="tour-package-details.html">Reves - Software and Digital Agency
+                                            WordPress
+                                            Theme.</a></h6>
+                                    <div class="review-area ">
+                                        <div class="star-wrap">
+                                            <ul class="star-list">
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li>(0)</li>
+                                            </ul>
+                                            <span>30 sale</span>
+                                        </div>
+                                        <div class="review-icon">
+                                            <img src="assets/images/icon/wordpress-sale-icon.png" alt="">
+                                        </div>
                                     </div>
-                                    <div class="review-icon review-html">
-                                        <img src="assets/images/icon/html-sale-icon.png" alt="">
+                                    <div class="price">
+                                        <span>$39</span>
+                                        <a href="tour-package-details.html"
+                                            class="eg-btn btn--primary-outline btn--md">Live
+                                            Preview</a>
                                     </div>
                                 </div>
-                                <div class="price">
-                                    <span>$19</span>
-                                    <a href="tour-package-details.html" class="eg-btn btn--primary-outline btn--md">Live
-                                        Preview</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="global-single">
+                                <div class="global-image">
+                                    <span class="favourite">
+                                        <img src="assets/images/icon/heart-icon.svg" alt="">
+                                    </span>
+                                    <img src="assets/images/blog/top-selling-p6.png" class="img-fluid" alt="image">
+                                </div>
+                                <div class="global-content">
+                                    <h6><a href="tour-package-details.html">Picszen - Photography HTML Template.</a>
+                                    </h6>
+                                    <div class="review-area ">
+                                        <div class="star-wrap">
+                                            <ul class="star-list">
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li>(0)</li>
+                                            </ul>
+                                            <span>07 sale</span>
+                                        </div>
+                                        <div class="review-icon review-html">
+                                            <img src="assets/images/icon/html-sale-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span>$19</span>
+                                        <a href="tour-package-details.html"
+                                            class="eg-btn btn--primary-outline btn--md">Live
+                                            Preview</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -2235,19 +2234,19 @@
             </div>
         </div>
     </div>
-    <!-- top selling products  -->
+    <!-- top selling products end -->
     <!-- ========== best-wocom-section start ============ -->
     <div class="best-wocom-section pt-120 pb-120">
         <div class="container">
             <div class="row align-items-center mb-50">
                 <div class="col-lg-10">
-                    <div class="section-title-seven text-lg-start text-center">
+                    <div class="section-title text-lg-start text-center">
                         <h2>Best WooCommerce Theme</h2>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div
-                        class="slider-arrows arrow-style-two text-center d-lg-flex d-none flex-row justify-content-end align-items-center gap-4">
+                        class="slider-arrows arrow-style-1 text-center d-lg-flex  flex-row justify-content-end align-items-center gap-4">
                         <div class="wocom-next swiper-next-arrow" tabindex="0" role="button" aria-label="Next slide">
                             <img src="assets/images/icon/left-arrow.svg" alt="">
                         </div>
