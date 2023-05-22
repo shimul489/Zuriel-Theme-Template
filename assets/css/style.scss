@@ -14,26 +14,13 @@ Template Name: zuriel -theme-Template
 9. banner-area
 10. trending-theme-section
 11. category-section
-15. portfolio-section
-16. Skill-section
-17. Team-section
-18. Contact-section
-19.Testimonial section
-20.Blog Section
-21.Footer
-22. Work-process
-23. Service-section
-24. About-section
-25. Video-section
-26. Inner-banner-section
-27. Faq Section
-28. search area start
-29. strategy-section
-30.growth-section
-31. Marque-text
-32. Choose Us section
-33 .category section
-34 .Sidebar
+12. top-selling-product
+13.best woo-com section
+14. Theme banner section
+15. Offer banner section
+16. Newslatter-area
+17. footer
+
 
 ================================================*/
 
@@ -104,6 +91,17 @@ Template Name: zuriel -theme-Template
 }
 
 // xl-device=====
+@mixin xxl-up-device {
+    @media (min-width: 1600px) and (max-width: 1799px) {
+        @content;
+    }
+}
+
+@mixin xxl-device {
+    @media (min-width: 1400px) and (max-width: 1599px) {
+        @content;
+    }
+}
 
 @mixin xxl-down-device {
     @media (max-width: 1399px) {
@@ -113,12 +111,6 @@ Template Name: zuriel -theme-Template
 
 @mixin xl-down-device {
     @media (max-width: 1199px) {
-        @content;
-    }
-}
-
-@mixin xxl-device {
-    @media (min-width: 1400px) and (max-width: 1599px) {
         @content;
     }
 }
@@ -150,12 +142,6 @@ Template Name: zuriel -theme-Template
 // md-device============
 @mixin md-device {
     @media (min-width: 768px) and (max-width: 991px) {
-        @content;
-    }
-}
-
-@mixin xxl-up-device {
-    @media (min-width: 1600px) {
         @content;
     }
 }
@@ -591,8 +577,6 @@ img {
  03. Section-title
 =======================================*/
 .section-title {
-    margin-bottom: 80px;
-
     h2 {
         font-family: var(--font-lexend);
         font-weight: 600;
@@ -600,7 +584,7 @@ img {
         line-height: 32px;
         color: var(--title-color);
         margin: 0;
-        
+
     }
 }
 
@@ -691,6 +675,7 @@ img {
 
 .global-content {
     padding: 25px 20px;
+
     @include xxl-down-device() {
         padding: 20px 14px;
     }
@@ -704,8 +689,14 @@ img {
             font-size: 17px;
             line-height: 30px;
             color: #4D4D4D;
-            @include xl-device(){
+
+            @include xl-device() {
                 font-size: 15px;
+            }
+
+            @include lg-device() {
+                font-size: 13px;
+                line-height: 24px;
             }
         }
     }
@@ -794,7 +785,7 @@ img {
 /*=======================================
  05. Slider arrows 
 =======================================*/
-.arrow-style-1{
+.arrow-style-1 {
 
     .wocom-prev,
     .wocom-next {
@@ -878,6 +869,9 @@ img {
             transform: scaleX(1);
         }
     }
+    @include sm-device(){
+        font-size: 14px;
+    }
 }
 
 .btn--primary-outline {
@@ -944,15 +938,52 @@ img {
 /*=======================================
  7. odometer
 =======================================*/
-.counter-wrapper {
-    .coundown {
+.counter-section {
+    padding-bottom: 70px;
+    @include sm-device(){
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    @include sm-down-device(){
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    @include xxl-device() {
+        padding-bottom: 40px;
+    }
+
+    .counter-wrapper {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
         gap: 50px;
-        z-index: 99;
 
-        .condown-inner-wrap {
+        @include xl-device() {
+            gap: 15px;
+        }
+        @include lg-device(){
+            gap: 0;
+        }
+        @include lg-down-device(){
+            gap: 15px;
+        }
+        @include sm-device(){
+            gap: 0px;
+        }
+        @include sm-down-device(){
+            gap: 0px;
+        }
+
+        .coundown {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 12px;
+            z-index: 99;
+
+            // @include xxl-device() {
+            //     gap: 10px;
+            // }
+
             .coundown-icon {
                 background: var(--gradient-color);
                 width: 53px;
@@ -961,33 +992,60 @@ img {
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
-                margin-right: 12px;
+
+                img {
+                    width: 25px;
+                    height: 21px;
+                    @include lg-device(){
+                        width: 20px;
+                        height: 15px;
+                    }
+                    @include sm-down-device(){
+                        width: 15px;
+                        height: 10px;
+                    }
+                }
+
+                @include lg-device() {
+                    width: 35px;
+                    height: 35px;
+                }
+                @include sm-down-device() {
+                    width: 30px;
+                    height: 30px;
+                }
             }
 
-            .coundown-title {
-                .odometer {
-                    font-family: var(--font-lexend);
-                    font-weight: 600;
-                    font-size: 35px;
-                    line-height: 44px;
-                    color: var(--text-color);
-                }
+            .odometer,
+            strong {
+                font-family: var(--font-lexend);
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 44px;
+                color: var(--text-color);
+                margin: 0;
 
-                .kilo {
-                    font-family: var(--font-lexend);
-                    font-weight: 600;
-                    font-size: 35px;
-                    line-height: 44px;
-                    color: var(--text-color);
-                    margin-left: 5px;
-                    margin-top: 5px;
+                @include sm-down-device() {
+                    font-size: 30px;
+                    line-height: 40px;
                 }
+            }
 
-                h6 {
-                    font-family: var(--font-work-sans);
-                    font-weight: 400;
-                    font-size: 17px;
-                    color: var(--text-color);
+
+            p {
+                font-family: var(--font-work-sans);
+                font-weight: 400;
+                font-size: 17px;
+                color: var(--text-color);
+
+                @include lg-device() {
+                    font-size: 15px;
+                }
+                @include sm-device() {
+                    font-size: 14px;
+                }
+                @include sm-down-device() {
+                    font-size: 13px;
                 }
             }
         }
@@ -1484,9 +1542,34 @@ header.style-1 {
     .banner-content {
         padding-left: 220px;
 
+        @include xxl-up-device() {
+            padding-left: 150px;
+        }
+
+        @include xxl-device() {
+            padding-left: 0px;
+        }
+
+        @include xl-device() {
+            padding-left: 0;
+        }
+
+        @include lg-device() {
+            padding-left: 0;
+        }
+        @include md-device(){
+            padding-left: 110px;
+        }
+        @include sm-device(){
+            padding: 0;
+        }
+        @include sm-down-device(){
+            padding: 0;
+        }
+
         .banner-title {
             h1 {
-                font-family: 'Lexend';
+                font-family: var(--font-lexend);
                 font-style: normal;
                 font-weight: 700;
                 font-size: 60px;
@@ -1496,15 +1579,46 @@ header.style-1 {
                 margin-bottom: 20px;
 
                 span {
-                    font-family: 'Lexend';
+                    font-family: var(--font-lexend);
                     font-style: normal;
                     font-weight: 700;
                     font-size: 60px;
                     line-height: 85px;
-                    @include linear-text1()
+                    @include linear-text1();
+
+                    @include xl-device() {
+                        font-size: 54px;
+                        line-height: 75px;
+                    }
+                    @include lg-device(){
+                        font-size: 45px;
+                        line-height: 70px;
+                    }
+                    @include lg-down-device(){
+                        font-size: 50px;
+                        line-height: 70px;
+                    }
+                    @include sm-device(){
+                        font-size: 45px;
+                        line-height: 75px;
+                    }
                 }
-                @include xxl-up-device(){
+
+                @include xl-device() {
                     font-size: 54px;
+                    line-height: 75px;
+                }
+                @include lg-device(){
+                    font-size: 45px;
+                    line-height: 70px;
+                }
+                @include lg-down-device(){
+                    font-size: 50px;
+                    line-height: 70px;
+                }
+                @include sm-device(){
+                    font-size: 45px;
+                    line-height: 75px;
                 }
             }
 
@@ -1515,55 +1629,19 @@ header.style-1 {
                 font-size: 18px;
                 line-height: 32px;
                 color: var(--text-color);
+
+                @include lg-device() {
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+                @include sm-device(){
+                    font-size: 17px;
+                    line-height: 30px;
+                }
             }
         }
 
-        // .multi-main-search {
-        //     max-width: 630px;
-        //     height: 70px;
-        //     background: #FFFFFF;
-        //     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
-        //     border-radius: 10px;
-        //     display: flex;
-        //     justify-content: space-between;
-        //     align-items: center;
-        //     padding: 0 30px;
-
-        //     .form-inner {
-        //         width: 100%;
-
-        //         input {
-        //             outline: none;
-        //             border: none;
-        //             width: 100%;
-
-        //             &::placeholder {
-        //                 font-family: var(--font-work-sans);
-        //                 font-weight: 400;
-        //                 font-size: 13px;
-        //                 line-height: 15px;
-        //                 color: var(--text-color);
-        //             }
-        //         }
-
-        //         button[type="submit"] {
-        //             font-family: var(--font-lexend);
-        //             font-weight: 500;
-        //             font-size: 17px;
-        //             line-height: 20px;
-        //             margin-right: 15px;
-        //             @include linear-text1();
-
-        //             img {
-        //                 padding-left: 15px;
-        //             }
-
-        //         }
-        //     }
-
-        // }
         .widget_search {
-
             .search__inside-wrapper {
                 display: flex;
                 max-width: 630px;
@@ -1576,17 +1654,14 @@ header.style-1 {
                 input.wp-block-search__input {
                     width: 100%;
                     padding: 10px 0;
-                    font-size: .875rem;
+                    font-family: var(--font-work-sans);
                     font-weight: 400;
-                    color: #272727;
-                    font-family: var(--font-cabin);
-                    opacity: .7;
-                    margin-right: 0;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #535961;
                 }
 
                 .wp-block-search__button {
-                    // height: 100%;
-                    // height: 48px;
                     padding: 10px 25px;
                     display: flex;
                     align-items: center;
@@ -1686,6 +1761,12 @@ header.style-1 {
         flex-direction: column;
         margin-left: 25px;
 
+        @include xl-device() {
+            margin-right: 15px;
+            width: 150px;
+            height: 150px;
+        }
+
         h5 {
             font-family: var(--font-lexend);
             font-weight: 700;
@@ -1693,6 +1774,11 @@ header.style-1 {
             line-height: 28px;
             @include linear-text1();
             max-width: 106px;
+
+            @include xl-device() {
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
 
         p {
@@ -1702,9 +1788,19 @@ header.style-1 {
             margin: 0;
             align-items: center;
             display: inline-block;
+
+            @include xl-device() {
+                font-size: 16px;
+            }
         }
     }
-    
+    // .banner-top, .banner-bottom{
+    //    @include sm-down-device(){
+    //     display: none;
+    //     visibility: hidden;
+    //    }
+    // }
+
 }
 
 /*=======================================
@@ -1785,9 +1881,11 @@ header.style-1 {
         border-radius: 5px;
         padding: 30px 25px 30px 47px;
         margin: 70px 0px;
-        @include lg-device(){
+
+        @include lg-device() {
             padding: 20px 15px 20px 25px;
         }
+
         .tab-category-container {
             padding-top: 5px;
 
@@ -1974,6 +2072,7 @@ header.style-1 {
 
 .trending-content {
     padding-left: 25px;
+
     @include xxl-down-device() {
         padding-left: 0;
         padding-top: 25px;
@@ -2145,6 +2244,9 @@ header.style-1 {
 
             img {
                 transition: 0.6s ease;
+                @include sm-device(){
+                    width: 100%;
+                }
             }
         }
 
@@ -2158,8 +2260,12 @@ header.style-1 {
                     font-weight: 700;
                     font-size: 29px;
                     color: var(--title-color);
-                    @include lg-device(){
+
+                    @include lg-device() {
                         font-size: 24px;
+                    }
+                    @include lg-down-device(){
+                        font-size: 28px;
                     }
                 }
 
@@ -2171,7 +2277,8 @@ header.style-1 {
                 font-size: 16px;
                 line-height: 28px;
                 color: var(--text-color);
-                @include lg-device(){
+
+                @include lg-device() {
                     font-size: 14px;
                     line-height: 24px;
                 }
@@ -2182,11 +2289,25 @@ header.style-1 {
 }
 
 /*=======================================
- 12. newest-theme section
+ 12. top selling product
 =======================================*/
-
 /*=======================================
- 6. theme banner section
+ 13. best wocom section
+=======================================*/
+.best-wocom-section{
+    .section-title{
+        margin-bottom: 0;
+        h2{
+            @include sm-device(){
+                font-size: 27px;
+            line-height: 29px;
+            }
+        }
+        
+    }
+}
+/*=======================================
+ 14. theme banner section
 =======================================*/
 .theme-banner-section {
 
@@ -2308,7 +2429,7 @@ header.style-1 {
 }
 
 /*=======================================
- 6. offer banner section
+ 15. offer banner section
 =======================================*/
 .offer-banner-section {
     background-image: url(../images/bg/offer-banner-bg.png);
@@ -2316,7 +2437,6 @@ header.style-1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #F0F1F6;
-    padding: 90px 0;
 }
 
 .secondary-content {
@@ -2331,6 +2451,9 @@ header.style-1 {
             position: relative;
             @include linear-text1();
             border-bottom: 2px solid #56AB2F;
+        }
+        @include sm-device(){
+            font-size: 35px;
         }
     }
 
@@ -2349,7 +2472,7 @@ header.style-1 {
 }
 
 /*=======================================
- 9. newsletter-area
+ 16. newsletter-area
 =======================================*/
 .newsletter-area {
     background-image: url(../images/bg/newsletter-bg.svg);
@@ -2414,7 +2537,7 @@ header.style-1 {
 }
 
 /*=======================================
- 10. footer area start here
+ 17. footer area start here
 =======================================*/
 footer {
     background: #1A1A1A;

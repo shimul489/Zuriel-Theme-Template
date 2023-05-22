@@ -13,26 +13,13 @@ Template Name: zuriel -theme-Template
 9. banner-area
 10. trending-theme-section
 11. category-section
-15. portfolio-section
-16. Skill-section
-17. Team-section
-18. Contact-section
-19.Testimonial section
-20.Blog Section
-21.Footer
-22. Work-process
-23. Service-section
-24. About-section
-25. Video-section
-26. Inner-banner-section
-27. Faq Section
-28. search area start
-29. strategy-section
-30.growth-section
-31. Marque-text
-32. Choose Us section
-33 .category section
-34 .Sidebar
+12. top-selling-product
+13.best woo-com section
+14. Theme banner section
+15. Offer banner section
+16. Newslatter-area
+17. footer
+
 
 ================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700&display=swap");
@@ -479,9 +466,6 @@ img {
 /*=======================================
  03. Section-title
 =======================================*/
-.section-title {
-  margin-bottom: 80px;
-}
 .section-title h2 {
   font-family: var(--font-lexend);
   font-weight: 600;
@@ -577,6 +561,12 @@ img {
 @media (min-width: 1200px) and (max-width: 1399px) {
   .global-content h6 a {
     font-size: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .global-content h6 a {
+    font-size: 13px;
+    line-height: 24px;
   }
 }
 .global-content .review-area {
@@ -726,6 +716,11 @@ img {
 .btn--primary:hover::before {
   transform: scaleX(1);
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .btn--primary {
+    font-size: 14px;
+  }
+}
 
 .btn--primary-outline {
   color: var(--white);
@@ -789,14 +784,64 @@ img {
 /*=======================================
  7. odometer
 =======================================*/
-.counter-wrapper .coundown {
+.counter-section {
+  padding-bottom: 70px;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .counter-section {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .counter-section {
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .counter-section {
+    padding-bottom: 40px;
+  }
+}
+.counter-section .counter-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .counter-section .counter-wrapper {
+    gap: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .counter-section .counter-wrapper {
+    gap: 0;
+  }
+}
+@media (max-width: 991px) {
+  .counter-section .counter-wrapper {
+    gap: 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .counter-section .counter-wrapper {
+    gap: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .counter-section .counter-wrapper {
+    gap: 0px;
+  }
+}
+.counter-section .counter-wrapper .coundown {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 50px;
+  gap: 12px;
   z-index: 99;
 }
-.counter-wrapper .coundown .condown-inner-wrap .coundown-icon {
+.counter-section .counter-wrapper .coundown .coundown-icon {
   background: var(--gradient-color);
   width: 53px;
   height: 53px;
@@ -804,29 +849,71 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-right: 12px;
 }
-.counter-wrapper .coundown .condown-inner-wrap .coundown-title .odometer {
+.counter-section .counter-wrapper .coundown .coundown-icon img {
+  width: 25px;
+  height: 21px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .counter-section .counter-wrapper .coundown .coundown-icon img {
+    width: 20px;
+    height: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .counter-section .counter-wrapper .coundown .coundown-icon img {
+    width: 15px;
+    height: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .counter-section .counter-wrapper .coundown .coundown-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .counter-section .counter-wrapper .coundown .coundown-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+.counter-section .counter-wrapper .coundown .odometer,
+.counter-section .counter-wrapper .coundown strong {
   font-family: var(--font-lexend);
   font-weight: 600;
   font-size: 35px;
   line-height: 44px;
   color: var(--text-color);
+  margin: 0;
 }
-.counter-wrapper .coundown .condown-inner-wrap .coundown-title .kilo {
-  font-family: var(--font-lexend);
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 44px;
-  color: var(--text-color);
-  margin-left: 5px;
-  margin-top: 5px;
+@media (max-width: 576px) {
+  .counter-section .counter-wrapper .coundown .odometer,
+  .counter-section .counter-wrapper .coundown strong {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
-.counter-wrapper .coundown .condown-inner-wrap .coundown-title h6 {
+.counter-section .counter-wrapper .coundown p {
   font-family: var(--font-work-sans);
   font-weight: 400;
   font-size: 17px;
   color: var(--text-color);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .counter-section .counter-wrapper .coundown p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .counter-section .counter-wrapper .coundown p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .counter-section .counter-wrapper .coundown p {
+    font-size: 13px;
+  }
 }
 
 /*=======================================
@@ -1250,8 +1337,43 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 .banner-area .banner-content {
   padding-left: 220px;
 }
+@media (min-width: 1600px) and (max-width: 1799px) {
+  .banner-area .banner-content {
+    padding-left: 150px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .banner-area .banner-content {
+    padding-left: 0px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .banner-area .banner-content {
+    padding-left: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-area .banner-content {
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-area .banner-content {
+    padding-left: 110px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .banner-area .banner-content {
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  .banner-area .banner-content {
+    padding: 0;
+  }
+}
 .banner-area .banner-content .banner-title h1 {
-  font-family: "Lexend";
+  font-family: var(--font-lexend);
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -1261,7 +1383,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   margin-bottom: 20px;
 }
 .banner-area .banner-content .banner-title h1 span {
-  font-family: "Lexend";
+  font-family: var(--font-lexend);
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -1271,9 +1393,52 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   -webkit-background-clip: text;
           background-clip: text;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .banner-area .banner-content .banner-title h1 span {
+    font-size: 54px;
+    line-height: 75px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-area .banner-content .banner-title h1 span {
+    font-size: 45px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-area .banner-content .banner-title h1 span {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .banner-area .banner-content .banner-title h1 span {
+    font-size: 45px;
+    line-height: 75px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
   .banner-area .banner-content .banner-title h1 {
     font-size: 54px;
+    line-height: 75px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-area .banner-content .banner-title h1 {
+    font-size: 45px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-area .banner-content .banner-title h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .banner-area .banner-content .banner-title h1 {
+    font-size: 45px;
+    line-height: 75px;
   }
 }
 .banner-area .banner-content .banner-title p {
@@ -1283,6 +1448,18 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   font-size: 18px;
   line-height: 32px;
   color: var(--text-color);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-area .banner-content .banner-title p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .banner-area .banner-content .banner-title p {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 .banner-area .banner-content .widget_search .search__inside-wrapper {
   display: flex;
@@ -1295,12 +1472,11 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 .banner-area .banner-content .widget_search .search__inside-wrapper input.wp-block-search__input {
   width: 100%;
   padding: 10px 0;
-  font-size: 0.875rem;
+  font-family: var(--font-work-sans);
   font-weight: 400;
-  color: #272727;
-  font-family: var(--font-cabin);
-  opacity: 0.7;
-  margin-right: 0;
+  font-size: 13px;
+  line-height: 15px;
+  color: #535961;
 }
 .banner-area .banner-content .widget_search .search__inside-wrapper .wp-block-search__button {
   padding: 10px 25px;
@@ -1349,6 +1525,13 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   flex-direction: column;
   margin-left: 25px;
 }
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .banner-area .build-title {
+    margin-right: 15px;
+    width: 150px;
+    height: 150px;
+  }
+}
 .banner-area .build-title h5 {
   font-family: var(--font-lexend);
   font-weight: 700;
@@ -1360,6 +1543,12 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
           background-clip: text;
   max-width: 106px;
 }
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .banner-area .build-title h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 .banner-area .build-title p {
   font-family: var(--font-work-sans);
   font-size: 20px;
@@ -1367,6 +1556,11 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   margin: 0;
   align-items: center;
   display: inline-block;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .banner-area .build-title p {
+    font-size: 16px;
+  }
 }
 
 /*=======================================
@@ -1741,6 +1935,11 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 .category-section .category-single .category-image img {
   transition: 0.6s ease;
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .category-section .category-single .category-image img {
+    width: 100%;
+  }
+}
 .category-section .category-single .category-content {
   padding: 15px 0;
   text-align: center;
@@ -1754,6 +1953,11 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 @media (min-width: 992px) and (max-width: 1199px) {
   .category-section .category-single .category-content h3 a {
     font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .category-section .category-single .category-content h3 a {
+    font-size: 28px;
   }
 }
 .category-section .category-single .category-content p {
@@ -1771,10 +1975,23 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 }
 
 /*=======================================
- 12. newest-theme section
+ 12. top selling product
 =======================================*/
 /*=======================================
- 6. theme banner section
+ 13. best wocom section
+=======================================*/
+.best-wocom-section .section-title {
+  margin-bottom: 0;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .best-wocom-section .section-title h2 {
+    font-size: 27px;
+    line-height: 29px;
+  }
+}
+
+/*=======================================
+ 14. theme banner section
 =======================================*/
 .theme-banner-section .theme-inner-wrap {
   position: relative;
@@ -1873,7 +2090,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 }
 
 /*=======================================
- 6. offer banner section
+ 15. offer banner section
 =======================================*/
 .offer-banner-section {
   background-image: url(../images/bg/offer-banner-bg.png);
@@ -1881,7 +2098,6 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #F0F1F6;
-  padding: 90px 0;
 }
 
 .secondary-content h2 {
@@ -1899,6 +2115,11 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
           background-clip: text;
   border-bottom: 2px solid #56AB2F;
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .secondary-content h2 {
+    font-size: 35px;
+  }
+}
 .secondary-content p {
   font-family: var(--font-work-sans);
   font-weight: 400;
@@ -1912,7 +2133,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 }
 
 /*=======================================
- 9. newsletter-area
+ 16. newsletter-area
 =======================================*/
 .newsletter-area {
   background-image: url(../images/bg/newsletter-bg.svg);
@@ -1971,7 +2192,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 }
 
 /*=======================================
- 10. footer area start here
+ 17. footer area start here
 =======================================*/
 footer {
   background: #1A1A1A;
