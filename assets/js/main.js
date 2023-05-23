@@ -111,10 +111,10 @@ var swiper = new Swiper(".wocom-slider", {
   speed: 1000,
   spaceBetween: 30,
   loop: true,
-      autoplay: {
-      delay: 3000,
-      disableOnInteraction: true,
-    },
+    //   autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: true,
+    // },
   pagination: {
     el: ".swiper-pagination",
     clickable: 'true',
@@ -169,16 +169,16 @@ var swiper = new Swiper(".tab-slider", {
       slidesPerView: 1,
     },
     386: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     540: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
     1200: {
       slidesPerView: 4,
