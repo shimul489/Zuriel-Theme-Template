@@ -240,7 +240,4 @@ var swiper = new Swiper(".tab-slider", {
  })
 
 
-
-
-
 })(jQuery);

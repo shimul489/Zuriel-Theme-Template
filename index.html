@@ -119,7 +119,7 @@
                                             <img src="assets/images/icon/counter-icon-1.png" alt="">
                                         </span>
                                         <div class="d-flex flex-column">
-                                            <div class="d-flex flex-row justify-content-start align-items-center gap-2 gap-sm-1">
+                                            <div class="d-flex flex-row justify-content-start align-items-baseline gap-2 gap-sm-1">
                                                 <h2 class="odometer" data-odometer-final="480"><span>27</span></h2><strong>k</strong>
                                             </div>
                                             <p>Theme & Template</p>
@@ -130,7 +130,7 @@
                                             <img src="assets/images/icon/counter-icon-2.png" alt="">
                                         </span>
                                         <div class="d-flex flex-column">
-                                            <div class="d-flex flex-row justify-content-start align-items-center gap-2 gap-sm-1">
+                                            <div class="d-flex flex-row justify-content-start align-items-baseline gap-2 gap-sm-1">
                                                 <h2 class="odometer" data-odometer-final="6"><span>2</span></h2><strong>k</strong>
                                             </div>
                                             <p>Happy User</p>
@@ -141,7 +141,7 @@
                                             <img src="assets/images/icon/counter-icon-3.png" alt="">
                                         </span>
                                         <div class="d-flex flex-column">
-                                            <div class="d-flex flex-row justify-content-start align-items-center gap-2">
+                                            <div class="d-flex flex-row justify-content-start align-items-baseline gap-2">
                                                 <h2 class="odometer" data-odometer-final="12"><span>4</span></h2><strong>k</strong>
                                             </div>
                                             <p>Theme Download</p>
@@ -149,9 +149,12 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="widget_search mb-30">
+                        <div class="widget_search">
                             <form>
                                 <div class="search__inside-wrapper ">
+                                    <div class="cross-icon">
+                                        <img  src="assets/images/icon/cross.svg" alt="">
+                                    </div>
                                     <input type="search" id="wp-block-search__input-1" class="wp-block-search__input"
                                         name="s" value="" placeholder="Search Your Product...." required="">
                                     <button type="submit" class="wp-block-search__button">
@@ -163,7 +166,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="row justify-content-between align-items-center g-4">
+                    <div class="row justify-content-between align-items-center gy-4">
                         <div class="banner-top d-lg-flex d-none justify-content-center align-items-center">
                             <div class="banner-img">
                                 <img src="assets/images/blog/banner-img-1.png" alt="">
@@ -308,7 +311,7 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center g-4">
+            <div class="row justify-content-center gy-4">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="global-single">
                         <div class="global-image">
@@ -1986,7 +1989,7 @@
     </div>
     <!-- theme banner end here  -->
     <!-- offer banner section start -->
-    <div class="offer-banner-section">
+    <div class="offer-banner-section pt-90 pb-90">
         <div class="container">
             <div class="row justify-content-between align-items-center g-5">
                 <div class="col-lg-5 ">
@@ -2007,7 +2010,7 @@
     <!-- offer banner section end -->
 
     <!-- top selling products start -->
-    <div class="top-selling-product pt-120">
+    <div class="top-selling-product pt-120 pb-120">
         <div class="container">
             <div class="row gy-4">
                 <div class="section-title d-flex justify-content-between align-items-center mb-70">
@@ -2090,7 +2093,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="row g-4">
+                    <div class="row gy-4">
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="global-single">
                                 <div class="global-image">
@@ -2251,15 +2254,14 @@
                         <h2>Best WooCommerce Theme</h2>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-3">
-                    <div
-                        class="slider-arrows arrow-style-1 text-center d-flex  flex-row justify-content-end align-items-center gap-4">
+                <div class="col-lg-2 col-md-4">
+                    <div class="slider-arrows arrow-style-1 text-center d-md-flex  d-none flex-row justify-content-end align-items-center gap-4">
                         <div class="wocom-next swiper-next-arrow" tabindex="0" role="button" aria-label="Next slide">
-                            <img src="assets/images/icon/left-arrow.svg" alt="">
+                            <i class="bi bi-arrow-left"></i>
                         </div>
                         <div class="wocom-prev swiper-prev-arrow" tabindex="0" role="button"
                             aria-label="Previous slide">
-                            <img src="assets/images/icon/right-arrow.svg" alt="">
+                            <i class="bi bi-arrow-right"></i>
                         </div>
                     </div>
                 </div>
@@ -2597,6 +2599,13 @@
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-8 text-center">
+                    <div class="category-button mt-60">
+                        <a href="#" class="btn--primary">View all ecommerce</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- ========== best-wocom-section end============= -->
@@ -2606,15 +2615,20 @@
             <div class="row justify-content-center ">
                 <div class=" col-lg-7">
                     <div class="newsletter-wrap">
-                        <div class="newsletter-title text-center mb-60">
+                        <div class="newsletter-title text-center mb-50">
                             <h2>Get the best theme offer into your inbox Connect Us now.</h2>
                         </div>
-                        <form>
-                            <div class="form-inner">
-                                <input type="email" name="email" placeholder="Enter Your Email...">
-                                <button class="btn--primary-outline"> Subscribe </button>
-                            </div>
-                        </form>
+                        <div class="widget_search">
+                            <form>
+                                <div class="search__inside-wrapper">
+                                    <input type="search" id="wp-block-search__input-1" class="wp-block-search__input"
+                                        name="s" value="" placeholder="Enter Your Email..." required="">
+                                    <button type="submit" class="wp-block-search__button btn--primary-outline">
+                                        Subscribe <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2692,13 +2706,17 @@
                             <h6>Newsletter</h6>
                             <div class="footer-subscribe">
                                 <p>Subscribe to receive a monthly email on the latest news!</p>
-                                <form>
-                                    <div class="form-inner">
-                                        <input type="email" name="email" placeholder="Enter Your Email...">
-                                        <button class=" btn--primary-outline "> Subscribe </button>
-
-                                    </div>
-                                </form>
+                                <div class="widget_search">
+                                    <form>
+                                        <div class="search__inside-wrapper">
+                                            <input type="search" id="wp-block-search__input-1" class="wp-block-search__input"
+                                                name="s" value="" placeholder="Enter Your Email..." required="">
+                                            <button type="submit" class="wp-block-search__button btn--primary-outline">
+                                                Subscribe
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
