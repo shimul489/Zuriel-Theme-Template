@@ -1868,6 +1868,7 @@ header.style-1 {
 .trending-theme-section {
     background-color: #fff;
     padding: 70px 60px 70px 30px;
+    overflow: hidden;
 
     @include md-device() {
         padding: 0;
@@ -1910,6 +1911,18 @@ header.style-1 {
             @include md-device(){
                 display: none;
             }
+            @include md-down-device(){
+                display: none;
+            }
+            @include sm-device(){
+                display: none;
+            }
+            @include sm-down-device(){
+                display: none;
+            }
+            @include threefifty-down-device(){
+                display: none;
+            }
             i {
                 background-color: #F0F1F6 !important;
                 border-radius: 100px;
@@ -1930,7 +1943,16 @@ header.style-1 {
             @include lg-device(){
                 display: block;
             }
-            @include md-device(){
+            @include md-down-device(){
+                display: none;
+            }
+            @include sm-device(){
+                display: none;
+            }
+            @include sm-down-device(){
+                display: none;
+            }
+            @include threefifty-down-device(){
                 display: none;
             }
             i {
@@ -1993,8 +2015,9 @@ header.style-1 {
         box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
         border-radius: 5px;
         padding: 30px 25px 30px 47px;
-        margin: 70px 0px;
-
+        @include lg-down-device(){
+            margin: 70px 0px;
+        }
         @include lg-device() {
             padding: 20px 15px 20px 25px;
         }
