@@ -161,26 +161,21 @@ color: #535961;
   text-align: left;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background: #FFFFFF;
-border-radius: 5px;
+  background:#fcfcfc;
 padding: 8px 15px;
 font-family: var(--font-lexend);
 font-weight: 300;
-font-size: 15px;
+font-size: 14px;
 }
 .nice-select .list :last-child{
   margin-bottom: 0;
 }
 
 .nice-select .option:hover{
-  background: var(--gradient-color);
-  color: #fff;
+  color: #cecece;
+  background: #09101A;
+  transition: all 0.2s ease-in-out;
 }
-
-.nice-select .option.selected {
-  font-weight: bold;
-}
-
 .nice-select .option.disabled {
   background-color: transparent;
   color: #999;

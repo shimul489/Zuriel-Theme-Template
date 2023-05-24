@@ -4,9 +4,9 @@ Template Name: zuriel -theme-Template
 
 /*================================================
 1. Mixins Css
-2. Global CSS
+2. product-card CSS
 3. Section-title
-4. global single content
+4. product-card single content
 5. slider arrow
 6. Buttons
 7. odometer
@@ -186,7 +186,7 @@ Template Name: zuriel -theme-Template
 
 
 /*================================================
-2. Global Css
+2. product-card Css
 =================================================*/
 html {
     font-size: 100%;
@@ -589,16 +589,17 @@ img {
 }
 
 /*=======================================
- 04. global-sigle-content
+ 04. product-card-sigle-content
 =======================================*/
-.global-single {
+.product-card-single {
     background: #FFFFFF;
     border-radius: 2px;
 
     &:hover {
-        .global-image {
+        .product-card-image {
             img {
                 transform: scale(1.1);
+                border-radius: 5px;
             }
 
             &::after {
@@ -626,11 +627,11 @@ img {
         }
     }
 
-    .global-image {
+    .product-card-image {
         position: relative;
         overflow: hidden;
 
-        img {
+        >img {
             transition: all 0.55s ease-in-out;
             border-radius: 5px 5px 0px 0px;
 
@@ -673,7 +674,7 @@ img {
 
 }
 
-.global-content {
+.product-card-content {
     padding: 20px 20px 22px 22px;
 
     @include xxl-down-device() {
@@ -751,7 +752,7 @@ img {
             border-radius: 50%;
         }
 
-        .review-html {
+        .review-border-1 {
             border: 1px solid #E34F26;
         }
     }
@@ -959,8 +960,6 @@ img {
  7. odometer
 =======================================*/
 .counter-section {
-    padding-bottom: 70px;
-
     @include sm-device() {
         padding-bottom: 50px;
         padding-top: 30px;
@@ -1198,7 +1197,7 @@ header.style-1 {
                     color: #0F110F;
                     display: block;
                     text-transform: capitalize;
-                    padding: 35px 0;
+                    padding: 45px 0;
                     -webkit-transition: .5s ease-out 0s;
                     -moz-transition: .5s ease-out 0s;
                     -ms-transition: .5s ease-out 0s;
@@ -1242,7 +1241,7 @@ header.style-1 {
                     font-style: normal;
                     position: absolute;
                     right: -7px;
-                    top: 30px;
+                    top: 45px;
                     z-index: 999;
                     cursor: pointer;
                     display: none;
@@ -1859,10 +1858,23 @@ header.style-1 {
     }
 
     .nav-wrapper {
+        margin-bottom: 40px;
 
         // background-image: url(../images/icon/icon-bg.png);
         //     background-repeat: no-repeat;
         //     background-size: cover;
+        .nav-title{
+            h3{
+               font-family: var(--font-lexend);
+font-weight: 600;
+font-size: 30px;
+line-height: 32px;
+color: var(--title-color);
+@include xl-down-device(){
+    font-size: 23px;
+}
+            }
+        }
         .tab-next {
             position: absolute;
             top: 8px;
@@ -1911,6 +1923,20 @@ header.style-1 {
         color: #535961;
         background-color: #F0F1F6;
         border-radius: 100px;
+        @include xxl-up-device(){
+            padding: 5px 28px;
+        }
+        @include xxl-device(){
+            padding: 5px 17px;
+        }
+        @include xl-device(){
+            padding: 5px 20px;
+        }
+        @include lg-device(){
+            padding: 5px 12px;
+            font-size: 12px;
+            line-height: 25px;
+        }
 
     }
 
@@ -2073,10 +2099,16 @@ header.style-1 {
     .trending-image {
         position: relative;
         overflow: hidden;
+        @include sm-device(){
+            width: 100%;
+        }
 
-        img {
+        >img {
             transition: all 0.55s ease-in-out;
             border-radius: 5px;
+            @include sm-device(){
+                width: 100%;
+            }
 
             // @include xxl-down-device() {
             //     width: 100%;
@@ -2181,7 +2213,7 @@ header.style-1 {
             border-radius: 50%;
         }
 
-        .review-html {
+        .review-border-1 {
             border: 1px solid #E34F26;
         }
     }
@@ -2224,7 +2256,7 @@ header.style-1 {
         padding: 20px 20px 0;
         transition: 0.6s ease;
         position: relative;
-        margin-top: 50px;
+        margin-top: 65px;
 
         .category-icon {
             position: absolute;
@@ -2294,9 +2326,8 @@ header.style-1 {
                 z-index: 1;
             }
 
-            img {
+            >img {
                 transition: 0.6s ease;
-
                 width: 100%;
 
             }
@@ -2361,13 +2392,6 @@ header.style-1 {
                     opacity: 1;
                 }
     
-                span.discount-bagde {
-                    &::after {
-                        color: var(--white);
-                        background: var(--primary-color1);
-                    }
-                }
-    
                 span.favourite {
                     opacity: 1;
                 }
@@ -2386,7 +2410,7 @@ header.style-1 {
             position: relative;
             overflow: hidden;
     
-            img {
+            >img {
                 transition: all 0.55s ease-in-out;
                 border-radius: 5px 5px 0px 0px;
     
@@ -2430,8 +2454,7 @@ header.style-1 {
     }
     
     .newest-content {
-        padding: 20px 20px 22px 22px;
-    
+        padding: 15px 17px 25px;
         @include xxl-down-device() {
             padding: 20px 14px;
         }
@@ -2469,7 +2492,7 @@ header.style-1 {
                     flex-direction: row;
                     align-items: center;
                     gap: 5px;
-    
+                    line-height: 1;
                     li {
                         .bi {
                             color: #F9BF00;
@@ -2507,7 +2530,7 @@ header.style-1 {
                 border-radius: 50%;
             }
     
-            .review-html {
+            .review-border-1 {
                 border: 1px solid #E34F26;
             }
         }
@@ -2546,7 +2569,7 @@ header.style-1 {
         .product-top {}
 
         .product-bottom {
-            .global-single {
+            .product-card-single {
 
                 // @include md-down-device(){
                 //     flex-wrap: wrap;
@@ -2554,7 +2577,7 @@ header.style-1 {
                 @include sm-down-device(){
                     flex-wrap: wrap;
                 }
-                .global-image {
+                .product-card-image {
                     padding-left: 25px;
                     overflow: hidden;
                     @include sm-device(){
@@ -2565,11 +2588,11 @@ header.style-1 {
                         padding-left: 0;
                         width: 100%;
                     }
-                    img{
+                    >img{
                         width: 100%;
                     }
                 }
-                .global-content{
+                .product-card-content{
                     @include md-down-device(){
                         width: 100%;
                     }
@@ -2646,7 +2669,7 @@ header.style-1 {
             position: relative;
             overflow: hidden;
     
-            img {
+        >img {
                 transition: all 0.55s ease-in-out;
                 border-radius: 5px 5px 0px 0px;
     
@@ -2767,7 +2790,7 @@ header.style-1 {
                 border-radius: 50%;
             }
     
-            .review-html {
+            .review-border-1 {
                 border: 1px solid #E34F26;
             }
         }
