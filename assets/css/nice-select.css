@@ -26,6 +26,14 @@ border-radius: 100px;
   user-select: none;
   white-space: nowrap;
 }
+@media only screen and (max-width: 768px) and (min-width: 576px)  {
+  .nice-select{
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
 span.current {
   font-family: var(--font-lexend);
 font-weight: 300;
@@ -63,6 +71,11 @@ color: #535961;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   width: 10px;
+}
+@media only screen and (max-width: 768px) and (min-width: 576px)  {
+  .nice-select::after{
+    top: 40%;
+  }
 }
 .nice-select:focus::after{
   border-bottom: 2px solid  #56AB2F ;
