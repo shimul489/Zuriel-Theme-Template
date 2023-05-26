@@ -478,6 +478,12 @@ img {
   color: var(--title-color);
   margin: 0;
 }
+@media (max-width: 576px) {
+  .section-title h2 {
+    font-size: 25px;
+    line-height: 26px;
+  }
+}
 
 .review-border-1 {
   border: 1px solid #E34F26;
@@ -1064,6 +1070,11 @@ header.style-1 .main-nav ul li {
   position: relative;
   padding: 0 25px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  header.style-1 .main-nav ul li {
+    padding: 0 20px;
+  }
+}
 header.style-1 .main-nav ul li a {
   font-family: var(--font-work-sans);
   font-weight: 500;
@@ -1361,6 +1372,11 @@ header.style-1 .main-nav ul li.menu-item-has-children > i {
 }
 header.style-1 .nav-right .cart-login {
   gap: 60px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  header.style-1 .nav-right .cart-login {
+    gap: 30px;
+  }
 }
 header.style-1 .nav-right .cart-login .cart-icon i {
   font-size: 22px;
@@ -2190,6 +2206,12 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   position: relative;
   margin-top: 65px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .category-section .category-single {
+    padding: 18px 22px 0;
+    margin-top: 40px;
+  }
+}
 .category-section .category-single .category-icon {
   position: absolute;
   background-color: #fff;
@@ -2719,6 +2741,13 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   color: var(--text-color);
   margin: 0;
 }
+@media (max-width: 991px) {
+  .theme-banner-section .theme-inner-wrap .quality-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .theme-banner-section .theme-inner-wrap .trust-score {
   position: absolute;
   top: 42%;
@@ -2728,6 +2757,13 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   border-radius: 145px;
   height: 143px;
   width: 143px;
+}
+@media (max-width: 991px) {
+  .theme-banner-section .theme-inner-wrap .trust-score {
+    transform: translateX(-50px);
+    top: 46%;
+    left: 50%;
+  }
 }
 @media (max-width: 767px) {
   .theme-banner-section .theme-inner-wrap .trust-score {

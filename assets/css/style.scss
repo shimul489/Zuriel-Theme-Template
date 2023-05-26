@@ -588,7 +588,10 @@ img {
         line-height: 32px;
         color: var(--title-color);
         margin: 0;
-
+        @include sm-down-device(){
+            font-size: 25px;
+            line-height: 26px;
+        }
     }
 }
 
@@ -1218,7 +1221,9 @@ header.style-1 {
                 display: inline-block;
                 position: relative;
                 padding: 0 25px;
-
+@include lg-device(){
+    padding: 0 20px;
+}
                 a {
                     font-family: var(--font-work-sans);
                     font-weight: 500;
@@ -1574,7 +1579,9 @@ header.style-1 {
     .nav-right {
         .cart-login {
             gap: 60px;
-
+@include lg-device(){
+    gap: 30px;
+}
             .cart-icon {
                 i {
                     font-size: 22px;
@@ -2438,7 +2445,10 @@ header.style-1 {
         transition: 0.6s ease;
         position: relative;
         margin-top: 65px;
-
+        @include lg-device(){
+            padding: 18px 22px 0;
+            margin-top: 40px;
+        }
         .category-icon {
             position: absolute;
             background-color: #fff;
@@ -3144,7 +3154,13 @@ header.style-1 {
                 }
             }
         }
-
+        .quality-image{
+            @include lg-down-device(){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         .trust-score {
             position: absolute;
             top: 42%;
@@ -3155,6 +3171,11 @@ header.style-1 {
             height: 143px;
             width: 143px;
 
+            @include lg-down-device() {
+                transform: translateX(-50px);
+                top: 46%;
+                left: 50%;
+            }
             @include md-down-device() {
                 transform: translateX(-50px);
                 top: 46%;
