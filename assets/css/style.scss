@@ -1774,9 +1774,9 @@ header.style-1 {
                     border-radius: 10px;
                     padding: 10px 30px;
 
-                    @include sm-down-device() {
-                        padding: 0px 20px;
-                    }
+                    // @include sm-down-device() {
+                    //     padding: 0px 20px;
+                    // }
 
                     .cross-icon {
                         position: absolute;
@@ -2537,12 +2537,15 @@ header.style-1 {
                     color: var(--title-color);
                     margin-bottom: 17px;
 
+                    // @include md-device() {
+                    //     font-size: 24px;
+                    // }
                     @include lg-device() {
                         font-size: 24px;
                     }
 
                     @include lg-down-device() {
-                        font-size: 28px;
+                        font-size: 24px;
                     }
                 }
 
@@ -2555,7 +2558,10 @@ header.style-1 {
                 line-height: 28px;
                 color: var(--text-color);
                 margin-bottom: 0;
-
+                @include lg-down-device() {
+                    font-size: 15px;
+                    line-height: 24px;
+                }
                 @include lg-device() {
                     font-size: 14px;
                     line-height: 24px;
@@ -3107,6 +3113,10 @@ header.style-1 {
                 line-height: 16px;
                 padding: 9px 20px;
                 background: var(--gradient-color);
+                @include sm-down-device(){
+                    font-size: 14px;
+                    padding: 7px 15px;
+                }
             }
         }
     }

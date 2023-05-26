@@ -1581,11 +1581,6 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   border-radius: 10px;
   padding: 10px 30px;
 }
-@media (max-width: 576px) {
-  .banner-area .banner-wrapper .banner-content .widget_search .search__inside-wrapper {
-    padding: 0px 20px;
-  }
-}
 .banner-area .banner-wrapper .banner-content .widget_search .search__inside-wrapper .cross-icon {
   position: absolute;
   right: 186px;
@@ -2290,7 +2285,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 }
 @media (max-width: 991px) {
   .category-section .category-single .category-content h3 a {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .category-section .category-single .category-content p {
@@ -2300,6 +2295,12 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   line-height: 28px;
   color: var(--text-color);
   margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .category-section .category-single .category-content p {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .category-section .category-single .category-content p {
@@ -2703,6 +2704,12 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   line-height: 16px;
   padding: 9px 20px;
   background: var(--gradient-color);
+}
+@media (max-width: 576px) {
+  .best-wocom-section .product-card-content .price a.btn--md {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
 }
 
 /*=======================================
