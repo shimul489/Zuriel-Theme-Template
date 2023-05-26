@@ -235,9 +235,5 @@ var swiper = new Swiper(".tab-slider", {
            
       }
       $(".tab-next.swiper-next-arrow").fadeIn().fadeIn("slow").fadeIn(1000);
-
-      
  })
-
-
 })(jQuery);
