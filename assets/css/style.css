@@ -150,6 +150,11 @@ img {
     padding-bottom: 90px;
   }
 }
+@media (max-width: 767px) {
+  .pb-120 {
+    padding-bottom: 60px;
+  }
+}
 
 .pt-100 {
   padding-top: 100px;
@@ -162,6 +167,11 @@ img {
 @media (max-width: 991px) {
   .pt-100 {
     padding-top: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .pt-100 {
+    padding-top: 60px;
   }
 }
 
@@ -486,6 +496,7 @@ img {
 }
 
 .review-border-1 {
+  border-radius: 50%;
   border: 1px solid #E34F26;
 }
 
@@ -634,6 +645,7 @@ img {
   border-radius: 50%;
 }
 .product-card-content .review-area .review-border-1 {
+  border-radius: 50%;
   border: 1px solid #E34F26;
 }
 .product-card-content .price {
@@ -2172,9 +2184,11 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   border-radius: 50%;
 }
 .trending-theme-section .trending-theme-inner .trending-content .review-area .review-border-1 {
+  border-radius: 50%;
   border: 1px solid #E34F26;
 }
 .trending-theme-section .trending-theme-inner .trending-content .review-area .review-border-2 {
+  border-radius: 50%;
   border: 1px solid #000000;
 }
 .trending-theme-section .trending-theme-inner .trending-content .price {
@@ -2462,6 +2476,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   border-radius: 50%;
 }
 .newest-theme-section .newest-content .review-area .review-border-1 {
+  border-radius: 50%;
   border: 1px solid #E34F26;
 }
 .newest-theme-section .newest-content .price {
@@ -2489,6 +2504,16 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
 /*=======================================
  12. top selling product
 =======================================*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .top-selling-product {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .top-selling-product {
+    padding-bottom: 0;
+  }
+}
 .top-selling-product .left-side-product .product-bottom .product-card-single {
   padding: 0 18px;
 }
@@ -2558,12 +2583,12 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   position: relative;
   overflow: hidden;
 }
-.best-wocom-section .product-card-single .product-card-image > img {
+.best-wocom-section .product-card-single .product-card-image a > img {
   transition: all 0.55s ease-in-out;
   border-radius: 5px 5px 0px 0px;
 }
 @media (max-width: 991px) {
-  .best-wocom-section .product-card-single .product-card-image > img {
+  .best-wocom-section .product-card-single .product-card-image a > img {
     width: 100%;
   }
 }
@@ -2667,9 +2692,11 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   border-radius: 50%;
 }
 .best-wocom-section .product-card-single .product-card-content .review-area .review-border-1 {
+  border-radius: 50%;
   border: 1px solid #E34F26;
 }
 .best-wocom-section .product-card-single .product-card-content .review-area .review-border-2 {
+  border-radius: 50%;
   border: 1px solid #000000;
 }
 .best-wocom-section .product-card-single .product-card-content .price {
@@ -2723,6 +2750,16 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   position: relative;
   width: 237px;
   padding: 18px 6px;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .theme-banner-section .theme-inner-wrap .quality-product {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .theme-banner-section .theme-inner-wrap .quality-product {
+    margin: 0 auto;
+  }
 }
 .theme-banner-section .theme-inner-wrap .quality-product::after {
   content: "";
@@ -2783,6 +2820,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   }
 }
 .theme-banner-section .theme-inner-wrap .theme-banner-image img {
+  width: 100%;
   border-radius: 5px;
 }
 .theme-banner-section .theme-inner-wrap .theme-banner-image a {
@@ -3098,6 +3136,20 @@ footer .footer-top {
   padding-top: 105px;
   padding-bottom: 90px;
 }
+@media (min-width: 320px) and (max-width: 400px) {
+  footer .footer-top {
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+  footer .footer-top .footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 footer .footer-top .footer-item .footer-logo {
   margin-bottom: 15px;
 }
@@ -3115,6 +3167,11 @@ footer .footer-top .footer-item .footer-list {
   padding: 0;
   list-style: none;
 }
+@media (min-width: 320px) and (max-width: 400px) {
+  footer .footer-top .footer-item .footer-list {
+    text-align: center;
+  }
+}
 footer .footer-top .footer-item .footer-list p {
   font-family: var(--font-work-sans);
   font-style: normal;
@@ -3129,6 +3186,13 @@ footer .footer-top .footer-item .footer-list p {
     max-width: 400px;
   }
 }
+@media (min-width: 320px) and (max-width: 400px) {
+  footer .footer-top .footer-item .footer-list .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer .footer-top .footer-item .footer-list .footer-social ul {
   margin: 0;
   padding: 0;
@@ -3140,16 +3204,17 @@ footer .footer-top .footer-item .footer-list .footer-social ul {
     gap: 30px;
   }
 }
+footer .footer-top .footer-item .footer-list .footer-social ul li a {
+  transition: all 0.5s ease-in-out;
+}
 footer .footer-top .footer-item .footer-list .footer-social ul li a i {
   font-size: 24px;
   color: #8D8D8D;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 footer .footer-top .footer-item .footer-list .footer-social ul li a i:hover {
-  background: linear-gradient(90deg, #56AB2F 0%, #A8E063 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: var(--white);
 }
 @media (max-width: 767px) {
   footer .footer-top .footer-item .footer-list .footer-social ul {
@@ -3168,10 +3233,15 @@ footer .footer-top .footer-item .footer-list li a {
   color: #8D8D8D;
 }
 footer .footer-top .footer-item .footer-list li a:hover {
-  background: linear-gradient(90deg, #56AB2F 0%, #A8E063 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: var(--white);
+}
+@media (min-width: 320px) and (max-width: 400px) {
+  footer .footer-top .footer-item .footer-subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 footer .footer-top .footer-item .footer-subscribe p {
   font-family: var(--font-work-sans);

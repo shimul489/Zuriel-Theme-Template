@@ -172,6 +172,12 @@ Template Name: zuriel -theme-Template
     }
 }
 
+@mixin fourtwenty-device {
+    @media (min-width: 320px) and (max-width: 400px) {
+        @content;
+    }
+}
+
 @mixin threefifty-down-device() {
     @media (max-width: 350px) {
         @content;
@@ -289,6 +295,9 @@ img {
     @include lg-down-device() {
         padding-bottom: 90px;
     }
+    @include md-down-device() {
+        padding-bottom: 60px;
+    }
 }
 
 .pt-100 {
@@ -300,6 +309,9 @@ img {
 
     @include lg-down-device() {
         padding-top: 90px;
+    }
+    @include md-down-device() {
+        padding-top: 60px;
     }
 }
 
@@ -597,6 +609,7 @@ img {
 }
 
 .review-border-1 {
+    border-radius: 50%;
     border: 1px solid #E34F26;
 }
 
@@ -750,7 +763,8 @@ img {
                 font-weight: 400;
                 font-size: 14px;
                 color: #999999;
-                strong{
+
+                strong {
                     font-family: var(--font-work-sans);
                     font-weight: 400;
                     font-size: 14px;
@@ -760,19 +774,20 @@ img {
         }
 
         .review-icon {
-            a{
+            a {
                 background-color: #fff;
-            width: 35px;
-            height: 35px;
-            border: 1px solid #00749A;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #00749A;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
             }
         }
 
         .review-border-1 {
+            border-radius: 50%;
             border: 1px solid #E34F26;
         }
     }
@@ -2297,6 +2312,7 @@ header.style-1 {
                 position: relative;
                 overflow: hidden;
                 border-radius: 5px;
+
                 @include sm-device() {
                     width: 100%;
                 }
@@ -2398,34 +2414,36 @@ header.style-1 {
                         font-weight: 400;
                         font-size: 14px;
                         color: #999999;
-                        
-                        strong{
+
+                        strong {
                             font-family: var(--font-work-sans);
-                        font-weight: 400;
-                        font-size: 14px;
+                            font-weight: 400;
+                            font-size: 14px;
                             color: #4D4D4D;
                         }
                     }
                 }
 
                 .review-icon {
-                   a{
-                    background-color: #fff;
-                    width: 35px;
-                    height: 35px;
-                    border: 1px solid #00749A;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                   }
+                    a {
+                        background-color: #fff;
+                        width: 35px;
+                        height: 35px;
+                        border: 1px solid #00749A;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                    }
                 }
 
                 .review-border-1 {
+                    border-radius: 50%;
                     border: 1px solid #E34F26;
                 }
 
                 .review-border-2 {
+                    border-radius: 50%;
                     border: 1px solid #000000;
                 }
             }
@@ -2756,7 +2774,8 @@ header.style-1 {
                     font-weight: 400;
                     font-size: 14px;
                     color: #999999;
-                    strong{
+
+                    strong {
                         font-family: var(--font-work-sans);
                         font-weight: 400;
                         font-size: 14px;
@@ -2766,19 +2785,20 @@ header.style-1 {
             }
 
             .review-icon {
-                a{
+                a {
                     background-color: #fff;
-                width: 35px;
-                height: 35px;
-                border: 1px solid #00749A;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid #00749A;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
                 }
             }
 
             .review-border-1 {
+                border-radius: 50%;
                 border: 1px solid #E34F26;
             }
         }
@@ -2813,6 +2833,12 @@ header.style-1 {
  12. top selling product
 =======================================*/
 .top-selling-product {
+    @include sm-device(){
+        padding-bottom: 0;
+    }
+    @include sm-down-device(){
+        padding-bottom: 0;
+    }
     .left-side-product {
         // .product-top {}
 
@@ -2961,16 +2987,19 @@ header.style-1 {
     .product-card-single {
         // box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
         border-radius: 2px;
+
         .product-card-image {
             position: relative;
             overflow: hidden;
 
-            >img {
-                transition: all 0.55s ease-in-out;
-                border-radius: 5px 5px 0px 0px;
-
-                @include lg-down-device() {
-                    width: 100%;
+            a{
+                >img {
+                    transition: all 0.55s ease-in-out;
+                    border-radius: 5px 5px 0px 0px;
+    
+                    @include lg-down-device() {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -3004,40 +3033,41 @@ header.style-1 {
                 transition: all 0.55s ease-in-out;
             }
         }
+
         .product-card-content {
             padding: 15px 17px 22px;
-    
+
             @include xxl-down-device() {
                 padding: 20px 14px;
             }
-    
+
             h6 {
                 margin-bottom: 4px;
-    
+
                 a {
                     font-family: var(--font-lexend);
                     font-weight: 500;
                     font-size: 17px;
                     line-height: 30px;
                     color: #4D4D4D;
-    
+
                     @include xl-device() {
                         font-size: 15px;
                     }
-    
+
                     @include lg-device() {
                         font-size: 13px;
                         line-height: 24px;
                     }
                 }
             }
-    
+
             .review-area {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 margin-bottom: 10px;
-    
+
                 .star-wrap {
                     .star-list {
                         @include list(none, 0, 0);
@@ -3046,7 +3076,7 @@ header.style-1 {
                         align-items: center;
                         gap: 5px;
                         line-height: 1;
-    
+
                         li {
                             .bi {
                                 color: #F9BF00;
@@ -3054,13 +3084,14 @@ header.style-1 {
                             }
                         }
                     }
-    
+
                     >span {
                         font-family: var(--font-work-sans);
                         font-weight: 400;
                         font-size: 14px;
                         color: #999999;
-                        strong{
+
+                        strong {
                             font-family: var(--font-work-sans);
                             font-weight: 400;
                             font-size: 14px;
@@ -3068,34 +3099,36 @@ header.style-1 {
                         }
                     }
                 }
-    
+
                 .review-icon {
-                    a{
+                    a {
                         background-color: #fff;
-                    width: 35px;
-                    height: 35px;
-                    border: 1px solid #00749A;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
+                        width: 35px;
+                        height: 35px;
+                        border: 1px solid #00749A;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
                     }
                 }
-    
+
                 .review-border-1 {
+                    border-radius: 50%;
                     border: 1px solid #E34F26;
                 }
-    
+
                 .review-border-2 {
+                    border-radius: 50%;
                     border: 1px solid #000000;
                 }
             }
-    
+
             .price {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-    
+
                 span {
                     font-family: var(--font-lexend);
                     font-weight: 500;
@@ -3104,7 +3137,7 @@ header.style-1 {
                     color: #4D4D4D;
                     transition: all 0.55s ease-in-out;
                 }
-    
+
                 a.btn--md {
                     font-family: var(--font-lexend);
                     font-weight: 500;
@@ -3112,7 +3145,7 @@ header.style-1 {
                     line-height: 16px;
                     padding: 9px 20px;
                     background: var(--gradient-color);
-    
+
                     @include sm-down-device() {
                         font-size: 14px;
                         padding: 7px 15px;
@@ -3135,9 +3168,11 @@ header.style-1 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto;
+
         @include lg-down-device() {
             background: none;
         }
+
         .quality-product {
             background-color: var(--white);
             border-radius: 5px;
@@ -3146,7 +3181,13 @@ header.style-1 {
             width: 237px;
             // padding: 18px;
             padding: 18px 6px;
-            &::after{
+            @include sm-device(){
+                margin: 0 auto;
+            }
+            @include sm-down-device(){
+                margin: 0 auto;
+            }
+            &::after {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -3159,9 +3200,11 @@ header.style-1 {
                 width: 122px;
                 height: 122px;
             }
-            .quality-icon{
+
+            .quality-icon {
                 margin-bottom: 20px;
             }
+
             .quality-content {
                 h5 {
                     font-family: var(--font-lexend);
@@ -3182,34 +3225,40 @@ header.style-1 {
                 }
             }
         }
-        .blur-bg{
-            &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            background-image: url(../images/bg/quality-product-bg-2.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 122px;
-            height: 122px;
+
+        .blur-bg {
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-image: url(../images/bg/quality-product-bg-2.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 122px;
+                height: 122px;
             }
         }
+
         .theme-banner-image {
             position: relative;
             border: 15px solid var(--white);
             border-radius: 5px;
             transition: all 0.5s ease-in;
+
             @include lg-down-device() {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
+
             img {
+                width: 100%;
                 border-radius: 5px;
             }
+
             a {
                 position: absolute;
                 top: 50%;
@@ -3227,7 +3276,8 @@ header.style-1 {
                 z-index: 3;
                 transition: 0.5s ease-in-out;
                 border-radius: 5px;
-                &:hover{
+
+                &:hover {
                     color: #fff;
                     background-color: #202020;
                 }
@@ -3311,7 +3361,8 @@ header.style-1 {
             }
         }
     }
-    .theme-banner-content{
+
+    .theme-banner-content {
         h2 {
             font-family: var(--font-lexend);
             font-weight: 600;
@@ -3319,6 +3370,7 @@ header.style-1 {
             color: #202020;
             margin-bottom: 25px;
             text-transform: capitalize;
+
             span {
                 font-family: var(--font-lexend);
                 @include linear-text1();
@@ -3326,18 +3378,21 @@ header.style-1 {
                 font-weight: 700;
                 font-size: 40px;
             }
+
             @include sm-down-device() {
                 font-size: 37px;
                 margin-bottom: 20px;
-            }   
+            }
+
             @include sm-device() {
                 font-size: 35px;
             }
+
             @include lg-device() {
                 font-size: 42px;
             }
         }
-    
+
         p {
             font-family: var(--font-work-sans);
             font-weight: 400;
@@ -3345,14 +3400,16 @@ header.style-1 {
             line-height: 32px;
             color: #535961;
             margin-bottom: 42px;
+
             @include md-down-device() {
                 font-size: 16px;
                 margin-bottom: 20px;
             }
         }
-    
+
         a.btn--primary {
             padding: 14px 30px;
+
             @include sm-down-device() {
                 font-size: 14px;
                 padding: 7px 15px;
@@ -3369,6 +3426,7 @@ header.style-1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     .offer-banner-content {
         h2 {
             font-family: var(--font-lexend);
@@ -3377,27 +3435,27 @@ header.style-1 {
             line-height: 62px;
             color: #202020;
             margin-bottom: 25px;
-    
+
             span {
                 position: relative;
                 @include linear-text1();
                 border-bottom: 2px solid #56AB2F;
             }
-    
+
             @include sm-down-device() {
                 font-size: 37px;
                 margin-bottom: 20px;
             }
-    
+
             @include sm-device() {
                 font-size: 35px;
             }
-    
+
             @include lg-device() {
                 font-size: 42px;
             }
         }
-    
+
         p {
             font-family: var(--font-work-sans);
             font-weight: 400;
@@ -3405,16 +3463,16 @@ header.style-1 {
             line-height: 32px;
             color: #535961;
             margin-bottom: 45px;
-    
+
             @include md-down-device() {
                 font-size: 16px;
                 margin-bottom: 20px;
             }
         }
-    
+
         a.btn--primary {
             padding: 14px 30px;
-    
+
             @include sm-down-device() {
                 font-size: 14px;
                 padding: 7px 15px;
@@ -3534,11 +3592,23 @@ header.style-1 {
 footer {
     background: #1A1A1A;
 
+
     .footer-top {
         padding-top: 105px;
         padding-bottom: 90px;
 
+        @include fourtwenty-device() {
+            text-align: center;
+        }
         .footer-item {
+            @include fourtwenty-device() {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+
             .footer-logo {
                 margin-bottom: 15px;
             }
@@ -3559,6 +3629,10 @@ footer {
                 padding: 0;
                 list-style: none;
 
+                @include fourtwenty-device() {
+                    text-align: center;
+                }
+
                 p {
                     font-family: var(--font-work-sans);
                     font-style: normal;
@@ -3574,6 +3648,12 @@ footer {
                 }
 
                 .footer-social {
+                    @include fourtwenty-device() {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
                     ul {
                         margin: 0;
                         padding: 0;
@@ -3587,13 +3667,14 @@ footer {
                         li {
 
                             a {
+                                transition: all 0.5s ease-in-out;
                                 i {
                                     font-size: 24px;
                                     color: #8D8D8D;
                                     position: relative;
-
+                                    transition: all 0.5s ease-in-out;
                                     &:hover {
-                                        @include linear-text1();
+                                        color: var(--white);
                                     }
                                 }
                             }
@@ -3617,7 +3698,7 @@ footer {
                         color: #8D8D8D;
 
                         &:hover {
-                            @include linear-text1();
+                            color: var(--white);
                         }
                     }
 
@@ -3625,6 +3706,13 @@ footer {
             }
 
             .footer-subscribe {
+                @include fourtwenty-device() {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
                 p {
                     font-family: var(--font-work-sans);
                     font-style: normal;
