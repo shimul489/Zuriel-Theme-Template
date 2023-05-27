@@ -1645,7 +1645,7 @@ header.style-1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    overflow-x: hidden;
     @include lg-down-device() {
         padding-bottom: 60px;
     }
@@ -2147,6 +2147,11 @@ header.style-1 {
         font-weight: 400;
         font-size: 15px;
         line-height: 32px;
+        @include lg-device(){
+            padding: 5px 15px;
+            font-size: 10px;
+            line-height: 25px;
+        }
     }
 
     .tab-category {
@@ -3181,6 +3186,9 @@ header.style-1 {
             width: 237px;
             // padding: 18px;
             padding: 18px 6px;
+            @include md-device(){
+                margin: 0 auto;
+            }
             @include sm-device(){
                 margin: 0 auto;
             }

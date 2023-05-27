@@ -150,7 +150,7 @@ var swiper = new Swiper(".wocom-slider", {
 
 var swiper = new Swiper(".tab-slider", {
   speed: 1000,
-  spaceBetween: 10,
+  spaceBetween: 0,
   loop: false,
     //   autoplay: {
     //   delay: 1000,

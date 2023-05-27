@@ -1423,6 +1423,7 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 @media (max-width: 991px) {
   .banner-area {
@@ -1937,6 +1938,13 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   font-weight: 400;
   font-size: 15px;
   line-height: 32px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .trending-theme-section .nav-link.active {
+    padding: 5px 15px;
+    font-size: 10px;
+    line-height: 25px;
+  }
 }
 .trending-theme-section .tab-category {
   background: #FFFFFF;
@@ -2750,6 +2758,11 @@ header.style-1 .nav-right .cart-login .login-btn a.btn--primary::after {
   position: relative;
   width: 237px;
   padding: 18px 6px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .theme-banner-section .theme-inner-wrap .quality-product {
+    margin: 0 auto;
+  }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .theme-banner-section .theme-inner-wrap .quality-product {
