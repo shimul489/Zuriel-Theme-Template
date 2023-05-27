@@ -760,7 +760,8 @@ img {
         }
 
         .review-icon {
-            background-color: #fff;
+            a{
+                background-color: #fff;
             width: 35px;
             height: 35px;
             border: 1px solid #00749A;
@@ -768,6 +769,7 @@ img {
             justify-content: center;
             align-items: center;
             border-radius: 50%;
+            }
         }
 
         .review-border-1 {
@@ -2407,6 +2409,7 @@ header.style-1 {
                 }
 
                 .review-icon {
+                   a{
                     background-color: #fff;
                     width: 35px;
                     height: 35px;
@@ -2415,6 +2418,7 @@ header.style-1 {
                     justify-content: center;
                     align-items: center;
                     border-radius: 50%;
+                   }
                 }
 
                 .review-border-1 {
@@ -2762,7 +2766,8 @@ header.style-1 {
             }
 
             .review-icon {
-                background-color: #fff;
+                a{
+                    background-color: #fff;
                 width: 35px;
                 height: 35px;
                 border: 1px solid #00749A;
@@ -2770,6 +2775,7 @@ header.style-1 {
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
+                }
             }
 
             .review-border-1 {
@@ -3064,7 +3070,8 @@ header.style-1 {
                 }
     
                 .review-icon {
-                    background-color: #fff;
+                    a{
+                        background-color: #fff;
                     width: 35px;
                     height: 35px;
                     border: 1px solid #00749A;
@@ -3072,6 +3079,7 @@ header.style-1 {
                     justify-content: center;
                     align-items: center;
                     border-radius: 50%;
+                    }
                 }
     
                 .review-border-1 {
@@ -3216,9 +3224,13 @@ header.style-1 {
                 color: var(--title-color);
                 padding: 10px 35px;
                 opacity: 0;
-                z-index: 9;
+                z-index: 3;
                 transition: 0.5s ease-in-out;
                 border-radius: 5px;
+                &:hover{
+                    color: #fff;
+                    background-color: #202020;
+                }
             }
 
             &::after {
