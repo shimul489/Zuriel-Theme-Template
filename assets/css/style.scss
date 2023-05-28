@@ -77,7 +77,14 @@ Template Name: zuriel -theme-Template
     margin: 0;
     padding: 0;
 }
-
+@mixin wrapper-link(){
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 9;
+}
 @mixin display($none, $hidden) {
     display: $none;
     visibility: $hidden;
@@ -295,6 +302,7 @@ img {
     @include lg-down-device() {
         padding-bottom: 90px;
     }
+
     @include md-down-device() {
         padding-bottom: 60px;
     }
@@ -310,6 +318,7 @@ img {
     @include lg-down-device() {
         padding-top: 90px;
     }
+
     @include md-down-device() {
         padding-top: 60px;
     }
@@ -602,7 +611,7 @@ img {
         margin: 0;
 
         @include sm-down-device() {
-            font-size: 25px;
+            font-size: 23px;
             line-height: 26px;
         }
     }
@@ -627,35 +636,22 @@ img {
 .product-card-single {
     background: #FFFFFF;
     border-radius: 2px;
-
+    position: relative;
+    .wrapper-link{
+        @include wrapper-link();
+    }
     &:hover {
         .product-card-image {
             img {
-                transform: scale(1.1);
+                // transform: scale(1.1);
                 border-radius: 5px;
             }
 
             &::after {
                 opacity: 1;
             }
-
-            span.discount-bagde {
-                &::after {
-                    color: var(--white);
-                    background: var(--primary-color1);
-                }
-            }
-
             span.favourite {
                 opacity: 1;
-            }
-        }
-
-        .newest-content {
-            .price {
-                span {
-                    color: var(--primary-color1);
-                }
             }
         }
     }
@@ -715,7 +711,8 @@ img {
         padding: 20px 14px;
     }
 
-    h6 {
+    h6 { 
+        margin:6px 0;
         a {
             font-family: var(--font-lexend);
             font-weight: 500;
@@ -789,6 +786,9 @@ img {
         .review-border-1 {
             border-radius: 50%;
             border: 1px solid #E34F26;
+            a{
+                border: none;
+            }
         }
     }
 
@@ -813,6 +813,7 @@ img {
             line-height: 16px;
             padding: 9px 20px;
             background: var(--gradient-color);
+            z-index: 99;
         }
     }
 }
@@ -1646,6 +1647,7 @@ header.style-1 {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+
     @include lg-down-device() {
         padding-bottom: 60px;
     }
@@ -1984,9 +1986,21 @@ header.style-1 {
     padding-right: 4%;
     padding-top: 70px;
     padding-bottom: 70px;
-
+    @include xl-device(){
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include xxl-down-device(){
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include xxl-device(){
+        padding-left: 3%;
+        padding-right: 3%;
+    }
     @include md-device() {
-        padding: 0;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     @include sm-device() {
@@ -2147,7 +2161,8 @@ header.style-1 {
         font-weight: 400;
         font-size: 15px;
         line-height: 32px;
-        @include lg-device(){
+
+        @include lg-device() {
             padding: 5px 15px;
             font-size: 10px;
             line-height: 25px;
@@ -2291,28 +2306,27 @@ header.style-1 {
             padding: 20px;
             box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
             border-radius: 5px;
-
+            position: relative;
+            @include xxl-device() {
+                flex-wrap: wrap;
+            }
             @include xxl-down-device() {
                 flex-wrap: wrap;
             }
 
             &:hover {
                 .trending-image {
-                    img {
-                        transform: scale(1.1);
-
-                    }
-
                     &::after {
                         opacity: 1;
                     }
-
                     span.favourite {
                         opacity: 1;
                     }
                 }
             }
-
+            .wrapper-link{
+                @include wrapper-link();
+            }
             .trending-image {
                 position: relative;
                 overflow: hidden;
@@ -2372,7 +2386,10 @@ header.style-1 {
 
         .trending-content {
             padding-left: 25px;
-
+            @include xxl-device() {
+                padding-left: 0;
+                padding-top: 25px;
+            }
             @include xxl-down-device() {
                 padding-left: 0;
                 padding-top: 25px;
@@ -2445,11 +2462,19 @@ header.style-1 {
                 .review-border-1 {
                     border-radius: 50%;
                     border: 1px solid #E34F26;
+
+                    a {
+                        border: none;
+                    }
                 }
 
                 .review-border-2 {
                     border-radius: 50%;
                     border: 1px solid #000000;
+
+                    a {
+                        border: none;
+                    }
                 }
             }
 
@@ -2474,6 +2499,7 @@ header.style-1 {
                     line-height: 16px;
                     padding: 9px 20px;
                     background: var(--gradient-color);
+                    z-index: 99;
                 }
             }
         }
@@ -2494,7 +2520,9 @@ header.style-1 {
         transition: 0.6s ease;
         position: relative;
         margin-top: 65px;
-
+        .wrapper-link{
+            @include wrapper-link;
+        }
         @include lg-device() {
             padding: 18px 22px 0;
             margin-top: 40px;
@@ -2514,6 +2542,7 @@ header.style-1 {
             top: -15px;
             transform: translate(-50%, -20px);
             z-index: 99;
+            cursor: pointer;
         }
 
         .wordpress {
@@ -2578,7 +2607,7 @@ header.style-1 {
         .category-content {
             padding: 30px 0;
             text-align: center;
-
+            
 
             h3 {
                 a {
@@ -2587,7 +2616,6 @@ header.style-1 {
                     font-size: 29px;
                     color: var(--title-color);
                     margin-bottom: 17px;
-
                     // @include md-device() {
                     //     font-size: 24px;
                     // }
@@ -2651,13 +2679,10 @@ header.style-1 {
     .newest-single {
         background: #FFFFFF;
         border-radius: 5px;
+        position: relative;
 
         &:hover {
             .newest-image {
-                img {
-                    transform: scale(1.1);
-                }
-
                 &::after {
                     opacity: 1;
                 }
@@ -2666,16 +2691,10 @@ header.style-1 {
                     opacity: 1;
                 }
             }
-
-            .newest-content {
-                .price {
-                    span {
-                        color: var(--primary-color1);
-                    }
-                }
-            }
         }
-
+        .wrapper-link{
+            @include wrapper-link;
+        }
         .newest-image {
             position: relative;
             overflow: hidden;
@@ -2805,6 +2824,9 @@ header.style-1 {
             .review-border-1 {
                 border-radius: 50%;
                 border: 1px solid #E34F26;
+                a{
+                    border: none;
+                }
             }
         }
 
@@ -2829,6 +2851,7 @@ header.style-1 {
                 line-height: 16px;
                 padding: 9px 20px;
                 background: var(--gradient-color);
+                z-index: 99;
             }
         }
     }
@@ -2838,19 +2861,44 @@ header.style-1 {
  12. top selling product
 =======================================*/
 .top-selling-product {
-    @include sm-device(){
+    @include sm-device() {
         padding-bottom: 0;
     }
-    @include sm-down-device(){
+
+    @include sm-down-device() {
         padding-bottom: 0;
     }
+
     .left-side-product {
-        // .product-top {}
+        .product-top {
+           
+            .product-card-single{
+                position: relative;
+                .wrapper-link{
+                    @include wrapper-link;
+                }
+            }
+            .product-card-content {
+                h6{
+                    a{
+                font-family: var(--font-lexend);
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 32px;
+                color: #4D4D4D;
+                margin-bottom: 8px;
+                    }
+                }
+            }
+        }
 
         .product-bottom {
             .product-card-single {
                 padding: 0 18px;
-
+                position: relative;
+                .wrapper-link{
+                    @include wrapper-link;
+                }
                 // @include md-down-device(){
                 //     flex-wrap: wrap;
                 // }
@@ -2892,78 +2940,11 @@ header.style-1 {
     }
 }
 
-.grid-item {
-    width: 200px;
-}
-
-.grid-item--width2 {
-    width: 400px;
-}
-
-// .masonary-gallery-area{
-//     .filter-button-group{
-//         ul{
-//             margin: 0;
-//             padding: 0;
-//             list-style: none;
-//             gap: 15px;
-//             li{
-
-//                     font-size: 1rem;
-//                     font-weight: 500;
-//                     color: var(--title-color-dark);
-//                     font-family: var(--font-Jost);
-//                     padding: 7px 38px;
-//                     border: 1px solid #eee;
-//                     border-radius: 2px;
-//                     cursor: pointer;
-//                     display: inline-block;
-
-//                 &.active{
-//                     background-color: red;
-//                     color: var(--white);
-//                 }
-//             }
-//         }
-//     }
-//     .grid-item{
-//         .gallery2-img{
-//             position: relative;
-//             .gallery-img{
-//                 transition: 0.35s;
-//                 >img{
-//                     border-radius: 10px;
-//                 }
-//                 .overlay{
-//                     position: absolute;
-//                     left: 0;
-//                     top: 0;
-//                     height: 100%;
-//                     width: 100%;
-//                     display: flex;
-//                     justify-content: center;
-//                     align-items: center;
-//                     background: linear-gradient(359.58deg, #002133 0.39%, rgba(0, 33, 51, 0) 51.47%);
-//                     border-radius: 10px;
-//                     opacity: 0;
-//                     transition: 0.35s;
-//                     transform: scale(.4);
-//                 }
-//                 &:hover{
-//                     .overlay{
-//                         opacity: 1;
-//                         transform: scale(1);
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
 /*=======================================
  13. best wocom section
 =======================================*/
 .best-wocom-section {
+    overflow-x: hidden;
     // background-color: var(--white);
 
     .section-title {
@@ -2992,19 +2973,22 @@ header.style-1 {
     .product-card-single {
         // box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
         border-radius: 2px;
+        position: relative;
+
+        .wrapper-link{
+            @include wrapper-link;
+        }
 
         .product-card-image {
             position: relative;
             overflow: hidden;
 
-            a{
-                >img {
-                    transition: all 0.55s ease-in-out;
-                    border-radius: 5px 5px 0px 0px;
-    
-                    @include lg-down-device() {
-                        width: 100%;
-                    }
+
+            >img {
+                transition: all 0.55s ease-in-out;
+                border-radius: 5px 5px 0px 0px;
+                @include lg-down-device() {
+                    width: 100%;
                 }
             }
 
@@ -3121,11 +3105,17 @@ header.style-1 {
                 .review-border-1 {
                     border-radius: 50%;
                     border: 1px solid #E34F26;
+                    a{
+                        border: none;
+                    }
                 }
 
                 .review-border-2 {
                     border-radius: 50%;
                     border: 1px solid #000000;
+                    a{
+                        border: none;
+                    }
                 }
             }
 
@@ -3150,7 +3140,7 @@ header.style-1 {
                     line-height: 16px;
                     padding: 9px 20px;
                     background: var(--gradient-color);
-
+                    z-index: 99;
                     @include sm-down-device() {
                         font-size: 14px;
                         padding: 7px 15px;
@@ -3186,15 +3176,19 @@ header.style-1 {
             width: 237px;
             // padding: 18px;
             padding: 18px 6px;
-            @include md-device(){
+
+            @include md-device() {
                 margin: 0 auto;
             }
-            @include sm-device(){
+
+            @include sm-device() {
                 margin: 0 auto;
             }
-            @include sm-down-device(){
+
+            @include sm-down-device() {
                 margin: 0 auto;
             }
+
             &::after {
                 content: "";
                 position: absolute;
@@ -3255,7 +3249,6 @@ header.style-1 {
             border: 15px solid var(--white);
             border-radius: 5px;
             transition: all 0.5s ease-in;
-
             @include lg-down-device() {
                 display: flex;
                 justify-content: center;
@@ -3385,10 +3378,13 @@ header.style-1 {
                 border-bottom: 2px solid #56AB2F;
                 font-weight: 700;
                 font-size: 40px;
+                @include sm-down-device() {
+                    font-size: 33px;
+                }
             }
 
             @include sm-down-device() {
-                font-size: 37px;
+                font-size: 30px;
                 margin-bottom: 20px;
             }
 
@@ -3451,16 +3447,19 @@ header.style-1 {
             }
 
             @include sm-down-device() {
-                font-size: 37px;
-                margin-bottom: 20px;
+                font-size: 30px;
+                margin-bottom: 15px;
+                line-height: 50px;
             }
 
             @include sm-device() {
                 font-size: 35px;
+                line-height: 50px;
             }
 
             @include lg-device() {
                 font-size: 42px;
+                line-height: 58px;
             }
         }
 
@@ -3605,11 +3604,12 @@ footer {
         padding-top: 105px;
         padding-bottom: 90px;
 
-        @include fourtwenty-device() {
+        @include sm-down-device() {
             text-align: center;
         }
+
         .footer-item {
-            @include fourtwenty-device() {
+            @include sm-down-device() {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -3637,7 +3637,7 @@ footer {
                 padding: 0;
                 list-style: none;
 
-                @include fourtwenty-device() {
+                @include sm-down-device() {
                     text-align: center;
                 }
 
@@ -3656,7 +3656,7 @@ footer {
                 }
 
                 .footer-social {
-                    @include fourtwenty-device() {
+                    @include sm-down-device() {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -3676,11 +3676,13 @@ footer {
 
                             a {
                                 transition: all 0.5s ease-in-out;
+
                                 i {
                                     font-size: 24px;
                                     color: #8D8D8D;
                                     position: relative;
                                     transition: all 0.5s ease-in-out;
+
                                     &:hover {
                                         color: var(--white);
                                     }
@@ -3714,7 +3716,7 @@ footer {
             }
 
             .footer-subscribe {
-                @include fourtwenty-device() {
+                @include sm-down-device() {
                     display: flex;
                     justify-content: center;
                     align-items: center;

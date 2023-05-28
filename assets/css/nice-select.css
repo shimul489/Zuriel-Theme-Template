@@ -258,7 +258,13 @@ display: inline-block;
     font-size: 12px;
   }
 }
-
+@media only screen and (max-width: 576px) and (min-width: 320px)  {
+  .nice-select{
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
 .nice-select:after {
   border-bottom: 2px solid #535961;
   border-right: 2px solid #535961;
