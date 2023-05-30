@@ -847,7 +847,7 @@ img {
         }
 
         &:hover {
-            background: var(--gradient-color);
+            background: #56AB2F;
 
             &:hover i {
                 color: var(--white);
@@ -855,7 +855,23 @@ img {
         }
 
     }
+    &.arrow-style-2{
+        .wocom-prev,
+    .wocom-next{
+        border: 1px solid var(--primary-color2);
+        i {
+            color: var(--primary-color2);
+        }
+        &:hover {
+            background: var(--primary-color2);
 
+            &:hover i {
+                color: var(--white);
+            }
+        }
+    }
+        
+    }
 }
 
 /*=======================================
@@ -4710,11 +4726,16 @@ footer {
                     transition: .35s;
                     padding-left: 3px;
                     background-color: #8D8D8D;
+                    
                 }
             }
-
+            &.style-2{
+                a{
+                    color: var(--primary-color2); 
+                -webkit-text-fill-color: unset;
+                }
+            }
         }
-
         .f-bottom-list {
             gap: 25px;
             @include listunstyle()

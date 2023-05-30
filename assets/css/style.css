@@ -699,10 +699,26 @@ img {
 }
 .arrow-style-1 .wocom-prev:hover,
 .arrow-style-1 .wocom-next:hover {
-  background: var(--gradient-color);
+  background: #56AB2F;
 }
 .arrow-style-1 .wocom-prev:hover:hover i,
 .arrow-style-1 .wocom-next:hover:hover i {
+  color: var(--white);
+}
+.arrow-style-1.arrow-style-2 .wocom-prev,
+.arrow-style-1.arrow-style-2 .wocom-next {
+  border: 1px solid var(--primary-color2);
+}
+.arrow-style-1.arrow-style-2 .wocom-prev i,
+.arrow-style-1.arrow-style-2 .wocom-next i {
+  color: var(--primary-color2);
+}
+.arrow-style-1.arrow-style-2 .wocom-prev:hover,
+.arrow-style-1.arrow-style-2 .wocom-next:hover {
+  background: var(--primary-color2);
+}
+.arrow-style-1.arrow-style-2 .wocom-prev:hover:hover i,
+.arrow-style-1.arrow-style-2 .wocom-next:hover:hover i {
   color: var(--white);
 }
 
@@ -4217,6 +4233,10 @@ footer .footer-bottom .copy-right-area p a {
   transition: 0.35s;
   padding-left: 3px;
   background-color: #8D8D8D;
+}
+footer .footer-bottom .copy-right-area.style-2 a {
+  color: var(--primary-color2);
+  -webkit-text-fill-color: unset;
 }
 footer .footer-bottom .f-bottom-list {
   gap: 25px;
