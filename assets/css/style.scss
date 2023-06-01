@@ -955,6 +955,9 @@ img {
         &::before {
             transform: scaleX(1);
         }
+        &::after {
+            border:1px solid #7AC246
+        }
     }
 
     @include sm-device() {
@@ -2761,9 +2764,9 @@ header.style-3 {
                             }
                         }
 
-                        a.active {
-                            color: #000;
-                        }
+                        // a.active {
+                        //     color: #000;
+                        // }
 
                         .sub-menu {
                             left: 215px;
@@ -3040,7 +3043,7 @@ header.style-3 {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
-
+    margin-bottom: 120px;
     @include lg-down-device() {
         padding-bottom: 60px;
     }
@@ -4339,7 +4342,7 @@ header.style-3 {
         padding: 28px 28px 0;
         transition: 0.6s ease;
         position: relative;
-        margin-top: 65px;
+        margin-top: 34px;
 
         .wrapper-link {
             @include wrapper-link;

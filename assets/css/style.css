@@ -793,6 +793,9 @@ img {
 .btn--primary:hover::before {
   transform: scaleX(1);
 }
+.btn--primary:hover::after {
+  border: 1px solid #7AC246;
+}
 @media (min-width: 576px) and (max-width: 768px) {
   .btn--primary {
     font-size: 14px;
@@ -2309,9 +2312,6 @@ header.style-3 .main-nav ul li ul.sub-menu > li a::after {
 header.style-3 .main-nav ul li ul.sub-menu > li a:hover:after {
   width: 100%;
 }
-header.style-3 .main-nav ul li ul.sub-menu > li a.active {
-  color: #000;
-}
 header.style-3 .main-nav ul li ul.sub-menu > li .sub-menu {
   left: 215px;
   position: absolute;
@@ -2525,6 +2525,7 @@ header.style-3 .nav-right .cart-login .login-btn a.btn--primary::before:hover {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  margin-bottom: 120px;
 }
 @media (max-width: 991px) {
   .banner-area {
@@ -3794,7 +3795,7 @@ header.style-3 .nav-right .cart-login .login-btn a.btn--primary::before:hover {
   padding: 28px 28px 0;
   transition: 0.6s ease;
   position: relative;
-  margin-top: 65px;
+  margin-top: 34px;
 }
 .category-section .category-single .wrapper-link {
   position: absolute;
