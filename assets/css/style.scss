@@ -637,7 +637,7 @@ img {
     font-family: var(--font-lexend);
     font-weight: 400;
     font-size: 13px;
-    line-height: 32px;
+    line-height: 15px;
     color: #999999;
 }
 
@@ -4387,14 +4387,16 @@ header.style-3 {
             background-color: var(--white);
 
             .category-image {
-                &::before {
-                    opacity: 1;
-                    border-radius: 5px;
-                }
+                
 
-                img {
-                    transform: scale(1.1);
-
+                a{
+                    &::before {
+                        opacity: 1;
+                        border-radius: 5px;
+                    }
+                    img {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -4404,25 +4406,27 @@ header.style-3 {
             overflow: hidden;
             border-radius: 5px;
 
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                background-color: rgba(32, 32, 32, 0.2);
-                width: 100%;
-                height: 100%;
-                transition: .6s ease;
-                opacity: 0;
-                z-index: 1;
-            }
+            
 
-            >img {
-                transition: 0.6s ease;
-                width: 100%;
-
+            a{
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background-color: rgba(32, 32, 32, 0.2);
+                    width: 100%;
+                    height: 100%;
+                    transition: .6s ease;
+                    opacity: 0;
+                    z-index: 1;
+                }
+                img {
+                    transition: 0.6s ease;
+                    width: 100%;
+                }
             }
         }
 
@@ -4432,16 +4436,14 @@ header.style-3 {
 
 
             h3 {
-                z-index: 999;
-
+                transition: 0.45s ease;
                 a {
                     font-family: var(--font-lexend);
                     font-weight: 700;
                     font-size: 29px;
                     color: var(--title-color);
                     margin-bottom: 17px;
-                    transition: all 0.5s ease-in-out;
-                    z-index: 999;
+                    transition: 0.6s ease;
 
                     // @include md-device() {
                     //     font-size: 24px;
@@ -4455,7 +4457,7 @@ header.style-3 {
                     }
 
                     &:hover {
-                        color: var(--primary-color2);
+                        @include linear-text1();
                     }
                 }
 
@@ -4591,7 +4593,7 @@ header.style-3 {
                 line-height: 30px;
                 color: #4D4D4D;
                 margin-bottom: 8px;
-
+                transition: 0.6s ease;
                 @include xl-device() {
                     font-size: 15px;
                 }
@@ -4599,6 +4601,9 @@ header.style-3 {
                 @include lg-device() {
                     font-size: 13px;
                     line-height: 24px;
+                }
+                &:hover{
+                    @include linear-text1();
                 }
             }
         }
