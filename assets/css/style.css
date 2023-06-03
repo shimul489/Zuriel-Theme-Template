@@ -5109,18 +5109,18 @@ footer .footer-bottom .f-bottom-list {
   background: #FFFFFF;
   border-radius: 10px;
 }
-.Featured-Plugins-section .feature-plugin-card .feature-plugin-card-image {
+.Featured-Plugins-section .feature-plugin-card .feature-plugin-image {
   padding: 20px 15px;
   padding-bottom: 0;
 }
-.Featured-Plugins-section .feature-plugin-card .feature-plugin-card-image img {
+.Featured-Plugins-section .feature-plugin-card .feature-plugin-image img {
   width: 100%;
 }
-.Featured-Plugins-section .feature-plugin-card .feature-plugin-card-content {
+.Featured-Plugins-section .feature-plugin-card .feature-plugin-content {
   padding: 30px 40px;
   padding-bottom: 35px;
 }
-.Featured-Plugins-section .feature-plugin-card .feature-plugin-card-content h6 a {
+.Featured-Plugins-section .feature-plugin-card .feature-plugin-content h6 a {
   font-family: var(--font-lexend);
   font-weight: 600;
   font-size: 25px;
@@ -5130,17 +5130,17 @@ footer .footer-bottom .f-bottom-list {
   margin-bottom: 10px;
   display: inline-block;
 }
-.Featured-Plugins-section .feature-plugin-card .feature-plugin-card-content .notification-status {
+.Featured-Plugins-section .feature-plugin-card .feature-plugin-content .notification-status {
   padding-top: 18px;
   padding-bottom: 38px;
   border-top: 1px solid #EEEEEE;
 }
-.Featured-Plugins-section .feature-plugin-card .feature-plugin-card-content .notification-status .meta {
+.Featured-Plugins-section .feature-plugin-card .feature-plugin-content .notification-status .meta {
   display: flex;
   justify-content: start;
   gap: 12px;
 }
-.Featured-Plugins-section .feature-plugin-card .feature-plugin-card-content .notification-status .meta a {
+.Featured-Plugins-section .feature-plugin-card .feature-plugin-content .notification-status .meta a {
   width: 26px;
   height: 26px;
   border: 0.5px solid #999999;
@@ -5149,7 +5149,7 @@ footer .footer-bottom .f-bottom-list {
   justify-content: center;
   align-items: center;
 }
-.Featured-Plugins-section .feature-plugin-card .feature-plugin-card-content .plugin-btn {
+.Featured-Plugins-section .feature-plugin-card .feature-plugin-content .plugin-btn {
   display: flex;
   justify-content: start;
   gap: 30px;
