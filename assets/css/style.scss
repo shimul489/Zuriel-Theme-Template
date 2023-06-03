@@ -5970,7 +5970,7 @@ footer {
 18. feature plugin section
 =======================================*/
 .Featured-Plugins-section {
-    .feature-plugin-card{
+    .feature-plugin-card {
         background: #FFFFFF;
         border-radius: 10px;
 
@@ -6036,6 +6036,7 @@ footer {
 =======================================*/
 .pruchase-plugin-section {
     background-color: #fff;
+
     .purchase-plugin-content {
         .main-title {
             h2 {
@@ -6046,30 +6047,35 @@ footer {
                 color: var(--primary-color3);
                 margin-bottom: 20px;
             }
-            p{
+
+            p {
                 margin-bottom: 40px;
             }
         }
 
         .inner-wrap {
             display: flex;
-            .inner-title{
-                h4{
-                font-family: var(--font-lexend);
-                font-weight: 600;
-                font-size: 26px;
-                line-height: 35px;
-                letter-spacing: 0.02em;
-                color: var(--title-color);
-                margin-bottom: 10px;
+
+            .inner-title {
+                h4 {
+                    font-family: var(--font-lexend);
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 35px;
+                    letter-spacing: 0.02em;
+                    color: var(--title-color);
+                    margin-bottom: 10px;
                 }
-                p{
+
+                p {
                     margin-bottom: 30px;
-                    &:last-child{
+
+                    &:last-child {
                         margin-bottom: 0;
                     }
                 }
             }
+
             .check-mark {
                 padding-top: 5px;
                 padding-right: 20px;
@@ -6077,4 +6083,81 @@ footer {
         }
     }
 
+}
+
+/*=======================================
+19.  plugin feature section
+=======================================*/
+.plugin-feature-section {
+    .plugin-feature-item {
+        width: 200px;
+        height: 132px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .plugin-feature-icon {
+            margin-bottom: 20px;
+        }
+
+        .plugin-feature-content {
+            h6 {
+                font-family: var(--font-lexend);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: var(--primary-color3);
+            }
+        }
+    }
+}
+
+.best-selling-plugin-section{
+    .feature-plugin-content {
+        padding: 30px 40px;
+        padding-bottom: 35px;
+
+        h6 {
+            a {
+                font-family: var(--font-lexend);
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+                color: var(--primary-color3);
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+        }
+
+        .notification-status {
+            padding-top: 18px;
+            padding-bottom: 38px;
+            border-top: 1px solid #EEEEEE;
+
+            .meta {
+                display: flex;
+                justify-content: start;
+                gap: 12px;
+
+                a {
+                    width: 26px;
+                    height: 26px;
+                    border: 0.5px solid #999999;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        .plugin-btn {
+            display: flex;
+            justify-content: start;
+            gap: 30px;
+        }
+    }
 }
