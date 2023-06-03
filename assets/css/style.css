@@ -1911,6 +1911,7 @@ header.style-2 .main-nav ul li:hover > ul.sub-menu {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+  z-index: 99;
 }
 header.style-2 .main-nav ul li:first-child {
   padding-left: 0px;
@@ -3286,6 +3287,9 @@ header.style-3 .nav-right .cart-login .login-btn a.btn--primary::before:hover {
   padding-left: 8%;
   padding-right: 4%;
 }
+.trending-theme-section.style-2 .trending-single .trending-content h6 a:hover {
+  color: var(--primary-color2);
+}
 @media (min-width: 1200px) and (max-width: 1399px) {
   .trending-theme-section {
     padding-left: 0;
@@ -4153,6 +4157,12 @@ header.style-3 .nav-right .cart-login .login-btn a.btn--primary::before:hover {
     padding-bottom: 0;
   }
 }
+.top-selling-product.style-2 .left-side-product .product-card-single .product-card-content h6 a:hover {
+  color: var(--primary-color2);
+}
+.top-selling-product.style-2 .product-card-single .product-card-content h6 a:hover {
+  color: var(--primary-color2);
+}
 .top-selling-product .left-side-product .product-top .product-card-single {
   position: relative;
 }
@@ -4219,6 +4229,9 @@ header.style-3 .nav-right .cart-login .login-btn a.btn--primary::before:hover {
 =======================================*/
 .best-wocom-section {
   overflow-x: hidden;
+}
+.best-wocom-section.style-2 .product-card-single .product-card-content h6 a:hover {
+  color: var(--primary-color2);
 }
 .best-wocom-section .section-title {
   margin-bottom: 0;

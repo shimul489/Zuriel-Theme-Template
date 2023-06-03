@@ -2283,6 +2283,7 @@ header.style-2 {
                         visibility: visible;
                         opacity: 1;
                         transform: translateY(0);
+                        z-index: 99;
                     }
                 }
 
@@ -3805,7 +3806,19 @@ header.style-3 {
     padding-right: 4%;
     // padding-top: 70px;
     // padding-bottom: 70px;
-
+    &.style-2{
+        .trending-single{
+            .trending-content{
+                h6{
+                    a{
+                        &:hover{
+                            color: var(--primary-color2);
+                        }
+                    }
+                }
+            }
+        }
+    }
     @include xl-device() {
         padding-left: 0;
         padding-right: 0;
@@ -4771,7 +4784,32 @@ header.style-3 {
     @include sm-down-device() {
         padding-bottom: 0;
     }
-
+    &.style-2{
+        .left-side-product{
+            .product-card-single{
+                .product-card-content{
+                    h6{
+                        a{
+                            &:hover{
+                                color: var(--primary-color2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product-card-single{
+            .product-card-content{
+                h6{
+                    a{
+                        &:hover{
+                            color: var(--primary-color2);
+                        }
+                    }
+                }
+            }
+        }
+    }
     .left-side-product {
         .product-top {
             .product-card-single {
@@ -4851,7 +4889,19 @@ header.style-3 {
 .best-wocom-section {
     overflow-x: hidden;
     // background-color: var(--white);
-
+    &.style-2{
+        .product-card-single{
+            .product-card-content{
+                h6{
+                    a{
+                        &:hover{
+                            color: var(--primary-color2);
+                        }
+                    }
+                }
+            }
+        }
+    }
     .section-title {
         margin-bottom: 0;
 
