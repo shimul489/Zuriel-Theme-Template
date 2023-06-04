@@ -1,7 +1,15 @@
 (function ($) {
   "use strict";
     // mobile-menu
-
+  $('#pricingPlanSwitcher').change(function(){
+    if($('#pricingPlanSwitcher').is(':checked')){
+        $('#mainPricingContent').addClass('plan-one');
+        $('#mainPricingContent').removeClass('plan-two');
+    } else {
+      $('#mainPricingContent').addClass('plan-two');
+      $('#mainPricingContent').removeClass('plan-one');
+    }
+  }).change();
 	$('.mobile-menu-btn').on("click",function(){
 		$('.main-nav').addClass('show-menu');
 	  });
@@ -189,7 +197,43 @@ var swiper = new Swiper(".tab-slider", {
   }
 });
 
-
+// Home Three Testimonial
+var swiper = new Swiper(".h3-testimonil-slider", {
+  spaceBetween: 24,
+  slidesPerView: 3,
+  loop: true,
+  speed:1500,
+  // autoplay: {
+  //   delay: 2200,
+  // },
+  navigation: {
+    nextEl: ".next-btn-12",
+    prevEl: ".prev-btn-12",
+  },
+  breakpoints: {
+    280:{
+      slidesPerView: 1,
+    },
+    420:{
+      slidesPerView: 1
+    },
+    768:{
+      slidesPerView: 2
+    },
+    992:{
+      slidesPerView: 2
+    },
+    // 1200:{
+    //   slidesPerView: 2
+    // },
+    // 1400:{
+    //   slidesPerView: 2
+    // },
+    // 1600:{
+    //   slidesPerView: 2
+    // },
+  }
+});
 
 /// active  slider item
 
