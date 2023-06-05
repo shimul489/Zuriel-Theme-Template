@@ -244,9 +244,9 @@ var swiper = new Swiper(".h3-testimonial-slider", {
   slidesPerView: 2,
   loop: true,
   speed:2000,
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
   navigation: {
     nextEl: ".next-btn-5",
     prevEl: ".prev-btn-5",
