@@ -198,17 +198,16 @@ var swiper = new Swiper(".tab-slider", {
 });
 
 // Home Three Testimonial
-var swiper = new Swiper(".h3-testimonil-slider", {
-  spaceBetween: 24,
-  slidesPerView: 3,
+var swiper = new Swiper(".best-selling-plugin-slider", {
+  slidesPerView: 1,
   loop: true,
   speed:1500,
   // autoplay: {
-  //   delay: 2200,
+  //   delay: 3000,
   // },
   navigation: {
-    nextEl: ".next-btn-12",
-    prevEl: ".prev-btn-12",
+    nextEl: ".next-btn-plugin",
+    prevEl: ".prev-btn-plugin",
   },
   breakpoints: {
     280:{
@@ -218,10 +217,10 @@ var swiper = new Swiper(".h3-testimonil-slider", {
       slidesPerView: 1
     },
     768:{
-      slidesPerView: 2
+      slidesPerView: 1
     },
     992:{
-      slidesPerView: 2
+      slidesPerView: 1
     },
     // 1200:{
     //   slidesPerView: 2
