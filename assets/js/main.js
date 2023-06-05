@@ -10,6 +10,10 @@
       $('#mainPricingContent').removeClass('plan-one');
     }
   }).change();
+
+
+
+
 	$('.mobile-menu-btn').on("click",function(){
 		$('.main-nav').addClass('show-menu');
 	  });
@@ -234,10 +238,46 @@ var swiper = new Swiper(".best-selling-plugin-slider", {
   }
 });
 
+// Home Two testimonial Slider
+var swiper = new Swiper(".h3-testimonial-slider", {
+  spaceBetween: 24,
+  slidesPerView: 2,
+  loop: true,
+  speed:2000,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".next-btn-5",
+    prevEl: ".prev-btn-5",
+  },
+ 
+  breakpoints: {
+    280:{
+      slidesPerView: 1,
+    },
+    480:{
+      slidesPerView: 1
+    },
+    768:{
+      slidesPerView: 1
+    },
+    992:{
+      slidesPerView: 2
+    },
+    1200:{
+      slidesPerView: 2
+    },
+    1400:{
+      slidesPerView:2
+    },
+    1600:{
+      slidesPerView: 2
+    },
+  }
+});
+
 /// active  slider item
-
-
-
  $(".swiper-slide .nav-item .nav-link ").on("click",function(){  
         $('.swiper-slide .nav-item .nav-link').removeClass('active');
           $(this).addClass("active");
