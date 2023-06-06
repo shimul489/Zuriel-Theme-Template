@@ -12,8 +12,6 @@
   }).change();
 
 
-
-
 	$('.mobile-menu-btn').on("click",function(){
 		$('.main-nav').addClass('show-menu');
 	  });
