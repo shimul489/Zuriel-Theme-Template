@@ -640,7 +640,6 @@ img {
         font-family: var(--font-lexend);
         font-weight: 600;
         font-size: 40px;
-        line-height: 32px;
         color: var(--primary-color3);
         margin-bottom: 18px;
         text-transform: capitalize;
@@ -6441,30 +6440,11 @@ footer {
  7. Home One pricing plan
 =======================================*/
 .pricing-plan-area {
-    .pricing-switch {
+    .pricing-main-switcher {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30px;
-
-        .form-switch {
-            .form-check-input:checked {
-                background-color: var(--primary-color3);
-            }
-
-            .form-check-input:focus {
-                box-shadow: none;
-                border: none;
-            }
-
-            .form-check-input {
-                width: 61px;
-                height: 30px;
-                border-radius: 15px;
-
-            }
-        }
-
         span {
             font-family: var(--font-lexend);
             font-weight: 400;
@@ -6915,7 +6895,9 @@ footer {
     .best-selling-plugin-card {
         box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
         border-radius: 5px;
-
+        @include lg-down-device(){
+            flex-wrap: wrap;
+        }
         .best-selling-plugin-image {
             position: relative;
             max-width: 648px;
@@ -6938,7 +6920,13 @@ footer {
         .best-selling-plugin-content {
             padding: 45px 40px;
             padding-bottom: 35px;
-
+            @include lg-device(){
+                padding: 0 30px;
+            }
+            @include sm-device(){
+                padding: 20px;
+        padding-bottom: 25px;
+            }
             h6 {
                 a {
                     font-family: var(--font-lexend);
@@ -6954,6 +6942,12 @@ footer {
 
             p {
                 margin-bottom: 35px;
+                @include lg-device(){
+                margin-bottom: 15px;
+                }
+                @include sm-device(){
+                    margin-bottom: 15px;
+                }
             }
 
             span {
@@ -6961,7 +6955,12 @@ footer {
                 font-weight: 400;
                 margin-bottom: 25px;
                 display: inline-block;
-
+                @include lg-device(){
+                    margin-bottom: 15px;
+                }
+                @include sm-device(){
+                    margin-bottom: 15px;
+                }
                 strong {
                     font-family: var(--font-work-sans);
                     font-weight: 600;
@@ -6974,7 +6973,12 @@ footer {
                 padding-top: 18px;
                 padding-bottom: 38px;
                 border-top: 1px solid #EEEEEE;
-
+                @include lg-device(){
+                    padding: 15px 0;
+                }
+                @include sm-device(){
+                    padding: 15px 0;
+                }
                 .meta {
                     display: flex;
                     justify-content: start;
@@ -7011,67 +7015,6 @@ footer {
             }
         }
     }
-
-    // .testimonial-wrapper{
-    //     background: #FFFFFF;
-    //     // box-shadow: 0px 30px 80px rgba(8, 0, 42, 0.08);
-    //     border-radius: 5px;
-    //     background-image: url(../images/bg/testimonial-bg-1.png);
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    //     background-size: cover;
-    //     padding: 35px;
-    //     position: relative;
-    //     // @include lg-down-device(){
-    //     //     max-width: 480px;
-    //     //     width: 100%;
-    //     //     margin: 0 auto;
-    //     // }
-    //     .author-img{
-    //         width: 60px;
-    //         height: 60px;
-    //         margin-bottom: 20px;
-    //         img{
-
-    //             border-radius: 50%;
-    //         }
-    //     }
-    //     .review{
-    //         display: flex;
-    //         justify-content: center;
-    //         margin-bottom: 15px;
-    //         ul{
-    //             display: flex;
-    //             align-items: center;
-    //             gap: 10px;
-    //             @include listunstyle();
-    //             li{
-    //                 line-height: 1;
-    //                 i{
-    //                     font-size: 18px;
-    //                     color: #F9BF00;
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     p{
-    //         text-align: center;
-    //     }
-
-
-    //         .author-name{
-    //             h5{
-    //                 font-family: var(--font-lexend);
-    //                 font-weight: 500;
-    //                 font-size: 22px;
-    //                 line-height: 30px;
-    //                 letter-spacing: 0.03em;
-    //                 color: var(--primary-color3);   
-    //                 text-align: center;  
-    //             }
-    //         }
-
-    // }
 }
 
 
@@ -7091,58 +7034,18 @@ div#pricingPlanTwo {
 
 
 .pricing-main-switcher {
-    // Font
-    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i);
-
     // Variables
-    $deep-blue: #0F110F;
     $speed3: cubic-bezier(0.26, 0.48, 0.08, 0.9);
 
     // Size var
     // Update this value to change the language switcher size
-    $height: 64px;
-
-    // Global Style
-
-    body {
-        background-color: var(--bg);
-        --bg: #00a6eb;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        font-family: "Source Sans Pro", Arial, sans-serif;
-
-        // Element centered for each browser
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        flex: 1 1;
-        -webkit-flex: initial;
-
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -ms-align-items: center;
-        align-items: center;
-
-        -webkit-justify-content: center;
-        -moz-justify-content: center;
-        -ms-justify-content: center;
-        justify-content: center;
-        -ms-flex-pack: center;
-    }
-
+    $height: 30px;
     .language-switcher {
         position: relative;
         display: inline-block;
         width: 61px;
         height: 30px;
-        -webkit-transform: translateY(40%);
-        -moz-transform: translateY(40%);
-        -ms-transform: translateY(40%);
-        -o-transform: translateY(40%);
-        transform: translateY(40%);
+        margin-top: 3px;
 
         // Closing Animation
         -webkit-transition: transform 0.17s $speed3;
@@ -7156,21 +7059,6 @@ div#pricingPlanTwo {
             width: 0;
             height: 0;
         }
-
-        //   .select-fr,
-        //   .select-en {
-        //     position: absolute;
-        //     font-size: #{$height / 2.5};
-        //     top: #{$height / 4};
-        //     color: #fff;
-        //     mix-blend-mode: difference;    
-        //   }
-        //   .select-fr {
-        //     left: #{$height / 3.5};
-        //   }
-        //   .select-en {
-        //     right: #{$height / 4};
-        //   }
     }
 
     /* The slider */
@@ -7181,8 +7069,8 @@ div#pricingPlanTwo {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $deep-blue;
-        box-shadow: 0 3px 64px rgba($deep-blue, .1);
+        background-color: var(--primary-color3);
+        box-shadow: 0 3px 64px rgba(var(--primary-color3), .1);
         -webkit-transition: 0.4s;
         transition: 0.4s;
     }
@@ -7195,15 +7083,15 @@ div#pricingPlanTwo {
         left: 0;
         bottom: 0;
         background-color: white;
-        box-shadow: 0 3px 64px rgba($deep-blue, .16);
+        box-shadow: 0 3px 64px rgba(var(--primary-color3), .16);
         -webkit-transition: 0.4s;
         transition: 0.4s;
         left: 7px;
-    bottom: 6px;
+        bottom: 6px;
     }
 
     input:checked+.slider {
-        background-color: $deep-blue;
+        background-color: var(--primary-color3);
     }
 
     input:focus+.slider {
@@ -7220,9 +7108,7 @@ div#pricingPlanTwo {
     .slider.round {
         border-radius: $height;
     }
-
     .slider.round:before {
         border-radius: 50%;
     }
-
 }
