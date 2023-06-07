@@ -1919,7 +1919,7 @@ header.style-2 .main-nav ul li a {
   color: var(--primary-color3);
   display: block;
   text-transform: capitalize;
-  padding: 30px 0;
+  padding: 36px 0;
   transition: none;
   position: relative;
 }
@@ -1954,7 +1954,7 @@ header.style-2 .main-nav ul li i {
   font-style: normal;
   position: absolute;
   right: -2px;
-  top: 30px;
+  top: 36px;
   z-index: 999;
   cursor: pointer;
   display: none;
@@ -2332,7 +2332,7 @@ header.style-3 .main-nav ul li a {
   letter-spacing: 0.02em;
   color: var(--primary-color3);
   display: block;
-  padding: 45px 0;
+  padding: 36px 0;
   transition: none;
   position: relative;
 }
@@ -2365,7 +2365,7 @@ header.style-3 .main-nav ul li a::after {
 }
 header.style-3 .main-nav ul li a.nav-badge span {
   position: absolute;
-  top: 20px;
+  top: 12px;
   right: 0;
   background: linear-gradient(144.98deg, #FF716B 13.99%, #FA5B5A 20.77%, #F43E44 31.35%, #F02C37 40.53%, #EF2632 47.23%, #D81521 61.08%, #CA0A17 74.56%, #C50613 85.91%);
   border-radius: 20px;
@@ -2401,8 +2401,8 @@ header.style-3 .main-nav ul li i {
   color: var(--primary-color3);
   font-style: normal;
   position: absolute;
-  right: -2px;
-  top: 43px;
+  right: -4px;
+  top: 35px;
   z-index: 999;
   cursor: pointer;
   display: none;
@@ -3274,7 +3274,7 @@ header.style-3 .nav-right .cart-login .login-btn a.btn--primary3 img {
   overflow-x: hidden;
 }
 .banner-area3 .banner-content {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .banner-area3 .banner-content {
