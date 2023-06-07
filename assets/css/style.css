@@ -2416,14 +2416,14 @@ header.style-3 .main-nav ul li i {
 }
 @media (max-width: 1199px) {
   header.style-3 .main-nav ul li i {
-    right: -11px;
-    top: 44px;
+    right: -12px;
+    top: 34px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   header.style-3 .main-nav ul li i {
-    right: -11px;
-    top: 44px;
+    right: -12px;
+    top: 34px;
   }
 }
 header.style-3 .main-nav ul li ul.sub-menu {
