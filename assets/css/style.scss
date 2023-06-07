@@ -5257,7 +5257,7 @@ header.style-3 {
     &.style-3{
         .product-card-single{
             .product-card-content {
-                padding: 15px 21px 22px;
+                padding: 5px 21px 22px;
             }
         }
     }
@@ -6133,9 +6133,10 @@ footer {
     .footer-top {
         padding-top: 105px;
         padding-bottom: 85px;
-        // @include sm-down-device() {
-        //     text-align: center;
-        // }
+        @include sm-down-device() {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
         .footer-item {
             // @include sm-down-device() {
             //     display: flex;
@@ -6338,7 +6339,6 @@ footer {
         }
     }
     &.style-3 {
-
         background-image: url(../images/bg/footer-h3-bg.svg);
         background-repeat: no-repeat;
         background-size: cover;

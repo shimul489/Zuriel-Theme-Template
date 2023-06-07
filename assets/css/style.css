@@ -4592,7 +4592,7 @@ header.style-3 .nav-right .mobile-search-area .login-btn a.btn--primary3 img {
  11. related-theme-section
 =======================================*/
 .related-theme-section.style-3 .product-card-single .product-card-content {
-  padding: 15px 21px 22px;
+  padding: 5px 21px 22px;
 }
 
 /*=======================================
@@ -5316,6 +5316,12 @@ footer {
 footer .footer-top {
   padding-top: 105px;
   padding-bottom: 85px;
+}
+@media (max-width: 576px) {
+  footer .footer-top {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 footer .footer-top .footer-item .footer-logo {
   margin-bottom: 30px;
